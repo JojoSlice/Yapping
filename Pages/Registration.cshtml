@@ -1,0 +1,44 @@
+﻿@page
+@model miniReddit.Pages.RegistrationModel
+@{
+    ViewData["Title"] = "Registration page";
+}
+
+<body>
+    <div class="container">
+        <form class="Form" method="post">
+            <div>
+                <label asp-for="UserName"></label>
+                <input asp-for="UserName" />
+                <span asp-validation-for="UserName"></span>
+            </div>
+
+            <div>
+                <label asp-for="Email"></label>
+                <input id="email" asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+            </div>
+
+            <div>
+                <label asp-for="Password"></label>
+                <input type="password" id="password" asp-for="Password" />
+                <span asp-validation-for="Password"></span>
+                <button type="button" id="togglePassword" style="border: none; background-color: transparent;">
+                    <img id="eyeIcon" src="~/img/eye-closed.svg" alt="Show/Hide" style="width: 1em;"/>
+                </button>
+            </div>
+
+            <div>
+                <label asp-for="ReEnterPassword"></label>
+                <input type="password" id="repassword" asp-for="ReEnterPassword" />
+                <span asp-validation-for="ReEnterPassword"></span>
+            </div>
+            
+            <div>
+                <input type="submit" value="Register" />
+            </div>
+        </form> 
+    </div>
+    <script src="~/js/Registration.js"></script>
+</body>
+

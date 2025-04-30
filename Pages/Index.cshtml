@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+    </div>
+
+    <div id="postContainer">
+        @if(Model.Posts.Any())
+        {
+            foreach (var post in Model.Posts)
+            {
+                <div class="post" data-createdat="@post.CreatedAt.ToString("o")">
+                    <h3>@post.Title</h3>
+                    <h6>@{ await Model.GetCategoryName(post.CategoryId);}</h6>
+                    <p>@post.Content</p>
+                </div>
+            }
+        }
+    </div>
+    
+    <script src="/js/Index.js"></script>
+
+</body>

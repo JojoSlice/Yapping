@@ -1,0 +1,17 @@
+﻿@page
+@model miniReddit.Pages.LogInModel
+@{
+}
+<body>
+    <h2 class="modal-Item">Sign In</h2>
+    <form method="post">
+        <input class="modal-Item" asp-for="UserName" placeholder="Användarnamn">
+                <span asp-validation-for="UserName"></span>
+        <input class="modal-Item" asp-for="Password" type="password" placeholder="Lösenord">
+                <span asp-validation-for="Password"></span>
+        <button class="SignInButton modal-Item" id="signInModal">Sign in</button>
+        <p>No account?</p>
+        <a class="nav-link text-dark" asp-area="" asp-page="/Registration">Start yapping!</a>
+
+    </form>
+</body>
