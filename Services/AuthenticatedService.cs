@@ -1,4 +1,7 @@
-﻿namespace miniReddit.Services
+﻿using Org.BouncyCastle.Bcpg;
+using System.Security.Claims;
+
+namespace miniReddit.Services
 {
     public class AuthenticationService
     {
@@ -14,6 +17,21 @@
             Console.WriteLine("Service");
             var user = _httpContextAccessor.HttpContext?.User;
             return user?.Identity?.IsAuthenticated ?? false;
+        }
+        public string GetLoggedInUserId()
+        {
+            Console.WriteLine("service/user");
+            var user = _httpContextAccessor.HttpContext?.User;
+            if (user != null)
+            {
+                var userid = user?.FindFirst(ClaimTypes.NameIdentifier).Value;
+                if (userid != null)
+                {
+                    return userid;
+                }
+                return string.Empty;
+            }
+            return string.Empty;
         }
     }
 }

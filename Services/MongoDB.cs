@@ -69,7 +69,7 @@ namespace miniReddit.Services
             }
             catch
             {
-                return new();
+                return [];
             }
         }
 
@@ -101,6 +101,18 @@ namespace miniReddit.Services
         }
 
         //----------- User Controller -------------------------------------||
+
+
+        public async Task UpdateProfilePic(string userId, string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                var filter = Builders<Models.User>.Filter.Eq(user => user.Id, userId);
+                var update = Builders<Models.User>.Update.Set(user => user.ProfileImg, filePath);
+
+                await _users.UpdateOneAsync(filter, update);
+            }
+        }
         public async Task<bool> LogIn(string username, string password)
         {
             var user = await _users.Find(user => user.Username == username).FirstOrDefaultAsync();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "okLra8h9kazGAzo7Shd5cMIFdVh38A+7GrQ4DwABtLo=",
+  "Hash": "hNRNqvMFJlVO7edFJKoNRPJfmYCzfAXcMG79RztILyw=",
   "Source": "miniReddit",
   "BasePath": "_content/miniReddit",
   "Mode": "Default",
@@ -458,12 +458,12 @@
       "OriginalItemSpec": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-oto27pptj4.gz",
+      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-2roo3dw7ml.gz",
       "SourceId": "miniReddit",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/miniReddit",
-      "RelativePath": "css/site#[.{fingerprint=oto27pptj4}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=2roo3dw7ml}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -472,8 +472,8 @@
       "RelatedAsset": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "w0jgsrmdv2",
-      "Integrity": "sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ=",
+      "Fingerprint": "xtf2tohuac",
+      "Integrity": "WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\site.css"
@@ -1046,12 +1046,12 @@
       "OriginalItemSpec": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-nln2r4mdc3.gz",
+      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-d8zisplicf.gz",
       "SourceId": "miniReddit",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/miniReddit",
-      "RelativePath": "js/site#[.{fingerprint=nln2r4mdc3}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=d8zisplicf}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "mnws506yio",
-      "Integrity": "rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I=",
+      "Fingerprint": "4sjt3qpmt2",
+      "Integrity": "ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\site.js"
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "oto27pptj4",
-      "Integrity": "LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo=",
+      "Fingerprint": "2roo3dw7ml",
+      "Integrity": "snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1592,6 +1592,27 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
+      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\img\\stockProfileImg.png",
+      "SourceId": "miniReddit",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\",
+      "BasePath": "_content/miniReddit",
+      "RelativePath": "img/stockProfileImg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z54eo15hd8",
+      "Integrity": "aad5dJhXz1CA+JfHbKb4RMKqIGS7us2l1WmKdWbc8g4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\stockProfileImg.png"
+    },
+    {
       "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\Index.js",
       "SourceId": "miniReddit",
       "SourceType": "Discovered",
@@ -1648,8 +1669,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nln2r4mdc3",
-      "Integrity": "+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M=",
+      "Fingerprint": "d8zisplicf",
+      "Integrity": "3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -2917,13 +2938,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-oto27pptj4.gz",
+      "Route": "css/site.2roo3dw7ml.css",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-2roo3dw7ml.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001652892562"
+          "Quality": "0.001492537313"
         }
       ],
       "ResponseHeaders": [
@@ -2933,19 +2954,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "604"
+          "Value": "669"
         },
         {
           "Name": "ETag",
-          "Value": "\"sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ=\""
+          "Value": "\"WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 13:21:47 GMT"
+          "Value": "Wed, 30 Apr 2025 11:28:18 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2961,18 +2982,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo=\""
+          "Value": "W/\"snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "2roo3dw7ml"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo="
+          "Value": "sha256-snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.2roo3dw7ml.css",
       "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2982,7 +3011,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1601"
+          "Value": "1887"
         },
         {
           "Name": "Content-Type",
@@ -2990,121 +3019,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo=\""
+          "Value": "\"snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 13:21:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-oto27pptj4.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "604"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 13:21:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.oto27pptj4.css",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-oto27pptj4.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001652892562"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "604"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 13:21:47 GMT"
+          "Value": "Wed, 30 Apr 2025 11:28:18 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "oto27pptj4"
+          "Value": "2roo3dw7ml"
         },
         {
           "Name": "label",
@@ -3112,13 +3041,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo="
+          "Value": "sha256-snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs="
         }
       ]
     },
     {
-      "Route": "css/site.oto27pptj4.css",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\site.css",
+      "Route": "css/site.2roo3dw7ml.css.gz",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-2roo3dw7ml.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3127,7 +3056,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1601"
+          "Value": "669"
         },
         {
           "Name": "Content-Type",
@@ -3135,56 +3064,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo=\""
+          "Value": "\"WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 13:21:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "oto27pptj4"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LCVYQK1zKUsUDJQGcTrzsbjw/FTcCQznQOu16RvyHgo="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.oto27pptj4.css.gz",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-oto27pptj4.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "604"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 13:21:47 GMT"
+          "Value": "Wed, 30 Apr 2025 11:28:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3202,7 +3086,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "oto27pptj4"
+          "Value": "2roo3dw7ml"
         },
         {
           "Name": "label",
@@ -3210,7 +3094,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sLN7WuOIV2rSni9Re1EBXy9wbDA/sJ8jGjEMERQ7JuQ="
+          "Value": "sha256-WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-2roo3dw7ml.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001492537313"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "669"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 11:28:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 11:28:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-snV3cKfB6bK+zQBcJQc9zrre0ADDS+5SaQqavz8cRhs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\a7vayfnil9-2roo3dw7ml.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "669"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 11:28:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WxbyHztrprvLJ6SdwcZ9McX53IH2gND/cMrVxP5PpxA="
         }
       ]
     },
@@ -4191,6 +4212,88 @@
       ]
     },
     {
+      "Route": "img/stockProfileImg.png",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\img\\stockProfileImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aad5dJhXz1CA+JfHbKb4RMKqIGS7us2l1WmKdWbc8g4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 11:16:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aad5dJhXz1CA+JfHbKb4RMKqIGS7us2l1WmKdWbc8g4="
+        }
+      ]
+    },
+    {
+      "Route": "img/stockProfileImg.z54eo15hd8.png",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\img\\stockProfileImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aad5dJhXz1CA+JfHbKb4RMKqIGS7us2l1WmKdWbc8g4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 11:16:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z54eo15hd8"
+        },
+        {
+          "Name": "label",
+          "Value": "img/stockProfileImg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aad5dJhXz1CA+JfHbKb4RMKqIGS7us2l1WmKdWbc8g4="
+        }
+      ]
+    },
+    {
       "Route": "js/Index.f8bdap3csz.js",
       "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-f8bdap3csz.gz",
       "Selectors": [
@@ -4787,13 +4890,13 @@
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-nln2r4mdc3.gz",
+      "Route": "js/site.d8zisplicf.js",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-d8zisplicf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001579778831"
+          "Quality": "0.001082251082"
         }
       ],
       "ResponseHeaders": [
@@ -4803,19 +4906,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "632"
+          "Value": "923"
         },
         {
           "Name": "ETag",
-          "Value": "\"rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I=\""
+          "Value": "\"ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 15:05:58 GMT"
+          "Value": "Wed, 30 Apr 2025 13:40:43 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4831,18 +4934,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M=\""
+          "Value": "W/\"3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "d8zisplicf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M="
+          "Value": "sha256-3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4="
         }
       ]
     },
     {
-      "Route": "js/site.js",
+      "Route": "js/site.d8zisplicf.js",
       "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4852,7 +4963,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1583"
+          "Value": "2985"
         },
         {
           "Name": "Content-Type",
@@ -4860,121 +4971,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M=\""
+          "Value": "\"3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 15:05:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-nln2r4mdc3.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "632"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 15:05:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.nln2r4mdc3.js",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-nln2r4mdc3.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001579778831"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "632"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 15:05:58 GMT"
+          "Value": "Wed, 30 Apr 2025 13:40:43 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nln2r4mdc3"
+          "Value": "d8zisplicf"
         },
         {
           "Name": "label",
@@ -4982,13 +4993,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M="
+          "Value": "sha256-3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4="
         }
       ]
     },
     {
-      "Route": "js/site.nln2r4mdc3.js",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\site.js",
+      "Route": "js/site.d8zisplicf.js.gz",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-d8zisplicf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4997,7 +5008,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1583"
+          "Value": "923"
         },
         {
           "Name": "Content-Type",
@@ -5005,56 +5016,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M=\""
+          "Value": "\"ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 15:05:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nln2r4mdc3"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+w6tEQIVHZA405NJsfCBIiVm0WqgdxI9FhCMQpvie8M="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.nln2r4mdc3.js.gz",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-nln2r4mdc3.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "632"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 15:05:58 GMT"
+          "Value": "Wed, 30 Apr 2025 13:40:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5072,7 +5038,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nln2r4mdc3"
+          "Value": "d8zisplicf"
         },
         {
           "Name": "label",
@@ -5080,7 +5046,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rmZKIH21+aGKWw7WabbPW4KwVWPDl8K1YFmvfQYXC0I="
+          "Value": "sha256-ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-d8zisplicf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001082251082"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "923"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 13:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 13:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3fJZWG8z02Nfa+l2dqcumbqD+mwsn/Oh6AVX9SeZrM4="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\pcbbrc04y5-d8zisplicf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 13:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZKTtBxT/tG50kFvkouMY3sGV9Nqmisl1NX2j4C1nH5Y="
         }
       ]
     },

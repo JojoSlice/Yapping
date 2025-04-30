@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -5,11 +6,10 @@ namespace miniReddit.Pages
 {
     public class LogOutModel : PageModel
     {
-        public IActionResult OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
-            HttpContext.Session.Clear();
-            Response.Cookies.Delete(".AspNetCore.Cookies");
+            await HttpContext.SignOutAsync("MyCookieAuth");
             return RedirectToPage("/Index");
-        }
+        }   
     }
 }

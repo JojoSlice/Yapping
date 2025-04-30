@@ -69,6 +69,7 @@ wwwroot\favicon.ico
 wwwroot\img\eye-closed.svg
 wwwroot\img\eye-open.svg
 wwwroot\img\logo.png
+wwwroot\img\stockProfileImg.png
 wwwroot\js\Index.js
 wwwroot\js\Registration.js
 wwwroot\js\site.js

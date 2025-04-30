@@ -114,6 +114,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.We
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.WebPages.Razor.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.WebPages.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-oto27pptj4.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-f8bdap3csz.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-nln2r4mdc3.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\miniReddit.sourcelink.json
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-2roo3dw7ml.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-d8zisplicf.gz

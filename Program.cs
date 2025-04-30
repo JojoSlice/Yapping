@@ -14,9 +14,8 @@ namespace miniReddit
             builder.Services.AddAuthentication("MyCookieAuth")
                 .AddCookie("MyCookieAuth", options =>
                 {
-                    //options.LoginPath = "/Login"; // t.ex. "/Login"
                     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-                    options.Cookie.Name = "MyCookieAuth"; // se till att det matchar
+                    options.Cookie.Name = "MyCookieAuth";
                     options.ExpireTimeSpan = TimeSpan.FromMinutes(90);
                 });
 

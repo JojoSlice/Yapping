@@ -2,9 +2,13 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 document.addEventListener("DOMContentLoaded", function () {
-    const authbutton = document.getElementById("authButton");
+    const authButton = document.getElementById("authButton");
     const signinmodal = document.getElementById("signInModal");
     const closeBtn = document.querySelector(".close");
+    const wlcText = document.getElementById("welcomeText");
+    const profileImg = document.getElementById("profileimg");
+    const profileLink = document.getElementById("profileLink");
+    let userdata;
 
     fetch("/api/isauthenticated/get", {
     credentials: "include" 
@@ -12,11 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
         if (data.authenticated) {
-            authButton.innerText = "Sign out";
+            authButton.value = "Sign out";
             authButton.addEventListener("click", signOut);
+            welcome();
+            profileLink.style.display = "block";
+            profileImg.style.display = "block";
+            profileImg.src = userdata.user.result.profileImg;
         } else {
-            authButton.innerText = "Sign in";
+            authButton.value = "Sign in";
             authButton.addEventListener("click", signIn);
+            profileLink.style.display = "none";
+            profileImg.style.display = "none";
+            wlcText.style.display = "none";
+            wlcText.innerText = "";
         }
     })
     .catch(error => {
@@ -32,11 +44,36 @@ document.addEventListener("DOMContentLoaded", function () {
             signinmodal.style.display = "none";
         }
     });
+
+    function welcome() {
+        fetch("api/User/user", {
+            credentials: "include"
+        })
+            .then(respons => {
+                if (!respons.ok) {
+                    throw new Error("Not authenticated");
+                } return respons.json();
+            })
+            .then(data => {
+                console.log(data);
+                userdata = data;
+                const username = data.user.result.username;
+                const welcomeMessage = `Welcome ${username}`;
+                console.log(welcomeMessage);
+                wlcText.style.display = "block";
+                wlcText.innerText = welcomeMessage;
+            })
+            .catch(error => {
+                console.error("Failed to fetch user: ", error);
+            });
+    }
+
     function signIn() {
         signinmodal.style.display = "block";
     };
 
     function signOut() {
+        console.log("logout");
         fetch('/LogOut')
             .then(respons => {
                 if (respons.redirected) {
