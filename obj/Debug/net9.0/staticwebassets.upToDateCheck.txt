@@ -50,6 +50,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\site.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\ProfilePage.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.js
@@ -64,6 +65,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\css\ProfilePage.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\eye-closed.svg

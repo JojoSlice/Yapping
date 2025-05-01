@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\miniReddit.i8075e779n.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\ProfilePage.css",
+      "PackagePath": "staticwebassets\\css\\ProfilePage.css"
+    },
+    {
       "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

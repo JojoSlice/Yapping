@@ -118,3 +118,4 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\miniReddit.sourcelink.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-2roo3dw7ml.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-d8zisplicf.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-4jf99cc0a9.gz

@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/css/ProfilePage.4jf99cc0a9.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ProfilePage.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4jf99cc0a9"},{"Name":"integrity","Value":"sha256-4M8/q/AgPQlQBmIXf4BMzjWgKt1cTnj2oA4Spys7Duc="},{"Name":"label","Value":"_content/miniReddit/css/ProfilePage.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"85"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224M8/q/AgPQlQBmIXf4BMzjWgKt1cTnj2oA4Spys7Duc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 May 2025 12:39:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/css/ProfilePage.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ProfilePage.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4M8/q/AgPQlQBmIXf4BMzjWgKt1cTnj2oA4Spys7Duc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"85"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00224M8/q/AgPQlQBmIXf4BMzjWgKt1cTnj2oA4Spys7Duc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 May 2025 12:39:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/css/site.2roo3dw7ml.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

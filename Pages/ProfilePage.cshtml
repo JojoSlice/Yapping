@@ -4,26 +4,29 @@
     ViewData["Title"] = "Profile page";
     var ProfileImg = Model.User.ProfileImg;
 }
+<head>
+    <link rel="stylesheet" href="~/css/ProfilePage.css" asp-append-version="true" />
+</head>
 <body>
     <div>
-        <img class="ProfilePageImg" src="@ProfileImg" />
+        <img class="ProfilePageImg" src="@Url.Content(ProfileImg)" />
         <input type="button" value="Change" />
     </div>
     <div>
         <ul>
             <li>
-                <label asp-for="User.Username"></label>
+                <label asp-for="User.Username"></label>: @Model.User.Username
             </li>
             <li>
-                <label asp-for="User.Email"></label>
+                <label asp-for="User.Email"></label>: @Model.User.Email
                 <input type="button" value="Change" />
             </li>
             <li>
-                <label>Amout of posts</label>
+                <label asp-for="PostAmount"></label>: @Model.PostAmount
                 <input type="button" value="See history" />
             </li>
             <li>
-                <label>Amout of comments</label>
+                <label asp-for="CommentAmount"></label>: @Model.CommentAmount
                 <input type="button" value="See history" />
             </li>
         </ul>
@@ -31,7 +34,7 @@
     <div class="ChangePicture">
         <div class="ChangeContainer">
             <form method="post" enctype="multipart/form-data">
-                <img class="ProfilePageImg" src="@ProfileImg" />
+                <img class="ProfilePageImg" src="@Url.Content(ProfileImg)" />
                 <p>Upload picture. Only .png or .jpg</p>
                 <input type="file" asp-for="ProfilePic" />
                 <span asp-validation-for="ProfilePic"></span>
