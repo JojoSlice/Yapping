@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const wlcText = document.getElementById("welcomeText");
     const profileImg = document.getElementById("profileimg");
     const profileLink = document.getElementById("profileLink");
-    let userdata;
 
     fetch("/api/isauthenticated/get", {
     credentials: "include" 
@@ -21,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             welcome();
             profileLink.style.display = "block";
             profileImg.style.display = "block";
-            profileImg.src = userdata.user.result.profileImg;
-        } else {
+                    } else {
             authButton.value = "Sign in";
             authButton.addEventListener("click", signIn);
             profileLink.style.display = "none";
@@ -62,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log(welcomeMessage);
                 wlcText.style.display = "block";
                 wlcText.innerText = welcomeMessage;
+                let path = data.user.result.profileImg.replace("~", "");
+                profileImg.src = path;
             })
             .catch(error => {
                 console.error("Failed to fetch user: ", error);

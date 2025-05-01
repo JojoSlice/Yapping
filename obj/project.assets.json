@@ -822,11 +822,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\miniReddit.csproj",
+      "projectUniqueName": "C:\\Users\\Johan\\web\\Yapping\\miniReddit.csproj",
       "projectName": "miniReddit",
-      "projectPath": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\miniReddit.csproj",
+      "projectPath": "C:\\Users\\Johan\\web\\Yapping\\miniReddit.csproj",
       "packagesPath": "C:\\Users\\Johan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\",
+      "outputPath": "C:\\Users\\Johan\\web\\Yapping\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

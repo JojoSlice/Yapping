@@ -57,14 +57,14 @@ namespace miniReddit.Pages
         }
         public async Task<IActionResult> OnPostAsync()
         {
+            Console.WriteLine("onPost runs");
             if (ProfilePic == null || ProfilePic.Length == 0)
             {
                 ModelState.AddModelError("", "No file selected.");
                 return Page();
             }
-
-            var fileName = Path.GetFileName(ProfilePic.FileName);
-            if (User == null)
+            var userId = _authentication.GetLoggedInUserId();
+            if (userId == null)
             {
                 ModelState.AddModelError("", "Not logged in.");
                 return RedirectToPage("/Index");
@@ -73,18 +73,29 @@ namespace miniReddit.Pages
             {
                 try
                 {
-
-
-                    var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/", User.Username);
-
-                    if (!Directory.Exists(uploadFolder))
+                    if (ProfilePic != null && (ProfilePic.ContentType == "image/png" || ProfilePic.ContentType == "image/jpeg"))
                     {
-                        Directory.CreateDirectory(uploadFolder);
-                    }
 
-                    var filePath = Path.Combine(uploadFolder, fileName);
-                    using var stream = new FileStream(filePath, FileMode.Create);
-                    await ProfilePic.CopyToAsync(stream);
+                        var oldFileName = Path.GetFileName(ProfilePic.FileName);
+                        var fileExt = Path.GetExtension(ProfilePic.FileName);
+                        var fileName = Guid.NewGuid().ToString() + fileExt;
+                        var safeUsername = string.Concat(User.Username.Split(Path.GetInvalidFileNameChars()));
+
+                        var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/uploads/{safeUsername}");
+
+                        if (!Directory.Exists(uploadFolder))
+                        {
+                            Directory.CreateDirectory(uploadFolder);
+                        }
+
+                        var filePath = Path.Combine(uploadFolder, fileName);
+                        using var stream = new FileStream(filePath, FileMode.Create);
+                        await ProfilePic.CopyToAsync(stream);
+
+                        var relativePath = $"/uploads/{safeUsername}/{fileName}";
+                        await _db.UpdateProfilePic(userId, relativePath);
+                        Console.WriteLine("Sparad bild i" + relativePath);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -94,8 +105,7 @@ namespace miniReddit.Pages
                 }
             }
 
-            await _db.UpdateProfilePic(User.Id, $"/uploads/{User.Username}/{fileName}");
-            return RedirectToPage("/Profile");
+            return RedirectToPage("/ProfilePage");
         }
     }
 }
