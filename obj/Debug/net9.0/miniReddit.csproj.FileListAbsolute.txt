@@ -158,7 +158,6 @@ C:\Users\Johan\web\Yapping\bin\Debug\net9.0\ZstdSharp.dll
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\scopedcss\bundle\miniReddit.styles.css
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\scopedcss\projectbundle\miniReddit.bundle.scp.css
-C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\qfw8nn83dc-4jf99cc0a9.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\a7vayfnil9-2roo3dw7ml.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\vk96w4ntts-61n19gt1b8.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\hhuzefj9jq-kk6gnqe9m2.gz
@@ -239,4 +238,6 @@ C:\Users\Johan\web\Yapping\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.csproj.Up2Date
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.genruntimeconfig.cache
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\ref\miniReddit.dll
-C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\pcbbrc04y5-kfsqx2qu6b.gz
+C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\pcbbrc04y5-en7q4r3dx3.gz
+C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
+C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz

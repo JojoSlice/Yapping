@@ -79,7 +79,8 @@ namespace miniReddit.Pages
                         var oldFileName = Path.GetFileName(ProfilePic.FileName);
                         var fileExt = Path.GetExtension(ProfilePic.FileName);
                         var fileName = Guid.NewGuid().ToString() + fileExt;
-                        var safeUsername = string.Concat(User.Username.Split(Path.GetInvalidFileNameChars()));
+                        var user = await _db.GetUserFromId(userId);
+                        var safeUsername = string.Concat(user.Username.Split(Path.GetInvalidFileNameChars()));
 
                         var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/uploads/{safeUsername}");
 

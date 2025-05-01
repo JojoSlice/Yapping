@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Johan\\web\\Yapping\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|c:\\users\\johan\\web\\yapping\\pages\\profilepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|solutionrelative:pages\\profilepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|c:\\users\\johan\\web\\yapping\\wwwroot\\css\\profilepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|solutionrelative:wwwroot\\css\\profilepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|c:\\users\\johan\\web\\yapping\\wwwroot\\js\\profilepage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|solutionrelative:wwwroot\\js\\profilepage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|c:\\users\\johan\\web\\yapping\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|c:\\users\\johan\\web\\yapping\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BE5704B-3130-44F9-BB42-89509EE46B80}|miniReddit.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Johan\\web\\Yapping\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Johan\\web\\Yapping\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T20:00:14.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Johan\\web\\Yapping\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
               "ToolTip": "C:\\Users\\Johan\\web\\Yapping\\wwwroot\\js\\site.js",
               "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-01T18:57:06.917Z",
+              "WhenOpened": "2025-05-01T20:00:08.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfilePage.js",
+              "DocumentMoniker": "C:\\Users\\Johan\\web\\Yapping\\wwwroot\\js\\ProfilePage.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\ProfilePage.js",
+              "ToolTip": "C:\\Users\\Johan\\web\\Yapping\\wwwroot\\js\\ProfilePage.js",
+              "RelativeToolTip": "wwwroot\\js\\ProfilePage.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-01T19:50:58.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfilePage.css",
+              "DocumentMoniker": "C:\\Users\\Johan\\web\\Yapping\\wwwroot\\css\\ProfilePage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\ProfilePage.css",
+              "ToolTip": "C:\\Users\\Johan\\web\\Yapping\\wwwroot\\css\\ProfilePage.css",
+              "RelativeToolTip": "wwwroot\\css\\ProfilePage.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-01T19:16:22.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfilePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Johan\\web\\Yapping\\Pages\\ProfilePage.cshtml",
+              "RelativeDocumentMoniker": "Pages\\ProfilePage.cshtml",
+              "ToolTip": "C:\\Users\\Johan\\web\\Yapping\\Pages\\ProfilePage.cshtml",
+              "RelativeToolTip": "Pages\\ProfilePage.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwC0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T19:12:52.633Z",
               "EditorCaption": ""
             }
           ]

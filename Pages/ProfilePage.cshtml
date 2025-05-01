@@ -10,7 +10,7 @@
 <body>
     <div>
         <img class="ProfilePageImg" src="@Url.Content(ProfileImg)" />
-        <input type="button" value="Change" />
+        <input id="changeProfileImg" type="button" value="Change" />
     </div>
     <div>
         <ul>
@@ -31,15 +31,16 @@
             </li>
         </ul>
     </div>
-    <div class="ChangePicture">
+    <div class="ChangePicture" id="changeWindow">
         <div class="ChangeContainer">
             <form method="post" enctype="multipart/form-data">
                 <img class="ProfilePageImg" src="@Url.Content(ProfileImg)" />
                 <p>Upload picture. Only .png or .jpg</p>
                 <input type="file" asp-for="ProfilePic" />
                 <span asp-validation-for="ProfilePic"></span>
-                <input type="submit" value="Upload" />
+                <input type="submit" value="Upload" id="upload"/>
             </form>
         </div>
     </div>
+    <script src="~/js/ProfilePage.js"></script>
 </body>
