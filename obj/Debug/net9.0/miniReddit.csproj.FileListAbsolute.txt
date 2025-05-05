@@ -117,8 +117,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\Microsoft.Web
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-f8bdap3csz.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\miniReddit.sourcelink.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-2roo3dw7ml.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-d8zisplicf.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-4jf99cc0a9.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.csproj.AssemblyReference.cache
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.AssemblyInfoInputs.cache
@@ -241,3 +239,6 @@ C:\Users\Johan\web\Yapping\obj\Debug\net9.0\ref\miniReddit.dll
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\pcbbrc04y5-en7q4r3dx3.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-en7q4r3dx3.gz
