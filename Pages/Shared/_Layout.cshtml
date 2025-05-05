@@ -1,4 +1,4 @@
-﻿@inject Services.MongoDB mongoDb
+﻿@inject APIManager.UserManager userManager;
 @{
 }
 
@@ -51,7 +51,7 @@
     <div id="signInModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            @await Html.PartialAsync("SignInPartial", new miniReddit.Pages.LogInModel(mongoDb))
+            @await Html.PartialAsync("SignInPartial", new miniReddit.Pages.LogInModel(userManager))
         </div>
     </div>
 

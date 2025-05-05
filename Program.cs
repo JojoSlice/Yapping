@@ -8,7 +8,8 @@ namespace miniReddit
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-            builder.Services.AddSingleton<Services.MongoDB>();
+            builder.Services.AddHttpClient<APIManager.UserManager>();
+            builder.Services.AddScoped<APIManager.UserManager>();
             builder.Services.AddScoped<Services.AuthenticationService>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddAuthentication("MyCookieAuth")

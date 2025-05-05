@@ -5,23 +5,71 @@
 }
 <body>
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-    </div>
+    <div class="container" id="postContainer">
+        <div class="row p-1">
+            <div class="col-2 card m-1 p-1" id="indexMenu">
+
+                <div class="dropdown m-1">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+            </div>
+                <button class="btn btn-primary m-1">New post</button>
+            </div>
+            <div class="col-8 m-1 card">
+                <div class="row">
+                    <div class="col-2 m-1 p-1 card">
+                        <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
+                        <h6 class="card-title">Username</h6>
+                        <button class="btn btn-secondary m-1">View user</button>
+                        <button class="btn btn-secondary m-1">Send message</button>
+                    </div>
+
+                    <div class="col-9 m-1 p-1 card">
+                        <div class="card-header m-1">
+                            <label class="card-title">Title/SubTitle</label>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Bla bla bla bla bla bla</p>
+                        </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary m-1">Comment <span class="badge">0</span></button>
+                                <button class="btn btn-info m-1">Like
+                                    <span class="badge">0</span> 
+                                </button> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    <div id="postContainer">
-        @if(Model.Posts.Any())
+
+
+
+        @* @if(Model.Posts.Any())
         {
-            foreach (var post in Model.Posts)
+            <div class="row p-1 border col-8">
+            
+            @foreach (var post in Model.Posts)
             {
-                <div class="post" data-createdat="@post.CreatedAt.ToString("o")">
+                <div class="col-3 p-1" id="postUserInfo">
+
+                </div>
+                <div class="post col-7 p-1" data-createdat="@post.CreatedAt.ToString("o")">
                     <h3>@post.Title</h3>
                     <h6>@{ await Model.GetCategoryName(post.CategoryId);}</h6>
                     <p>@post.Content</p>
                 </div>
+                <hr class="m-2" />
             }
-        }
+            </div>
+        } *@
     </div>
     
     <script src="/js/Index.js"></script>

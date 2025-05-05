@@ -7,9 +7,9 @@ using System.Security.Claims;
 
 namespace miniReddit.Pages
 {
-    public class LogInModel(Services.MongoDB mongoDb) : PageModel
+    public class LogInModel(APIManager.UserManager userManager) : PageModel
     {
-        private readonly Services.MongoDB _mongoDb = mongoDb;
+        private readonly APIManager.UserManager _userManager = userManager;
 
         [BindProperty]
         [Display(Name = "Username")]
@@ -27,14 +27,14 @@ namespace miniReddit.Pages
             if (!ModelState.IsValid)
                 return Page();
 
-            if (await _mongoDb.LogIn(UserName, Password))
+            if (await _userManager.LogIn(UserName, Password))
             {
-                var userId = await _mongoDb.GetUserId(UserName);
+                var userId = await _userManager.GetUserIdAsync(UserName);
 
                 var claims = new List<Claim>
                 {
                     new(ClaimTypes.Name, UserName),
-                    new(ClaimTypes.NameIdentifier, userId)
+                    new(ClaimTypes.NameIdentifier, userId.ToString())
                 };
 
                 var identity = new ClaimsIdentity(claims, "MyCookieAuth");

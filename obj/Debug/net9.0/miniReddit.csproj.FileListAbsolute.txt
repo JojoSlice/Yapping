@@ -44,7 +44,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\lw
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\97vau56gh3-nvvlpmu67g.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fge9votq13-s35ty4nyc5.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\l0e4r6wh8r-pj5nd1wqec.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\y7rbfz3grm-46ein0sx1k.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\doe55g71n7-v0zj4ognzu.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\5gsh4ydc1r-37tfw0ft22.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\5iul3zzv9o-hrwsygsryq.gz
@@ -116,7 +115,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.We
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-f8bdap3csz.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\miniReddit.sourcelink.json
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-2roo3dw7ml.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.csproj.AssemblyReference.cache
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.AssemblyInfoInputs.cache
@@ -241,4 +239,6 @@ C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-en7q4r3dx3.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-h18kumucy9.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\y7rbfz3grm-wuprjd7kxx.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-burorn5xni.gz

@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S2IU87EvEjsgjJcW/k3Jd0lSw7dD8\u002BxqhVbo8W2g4QA="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"440"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022S2IU87EvEjsgjJcW/k3Jd0lSw7dD8\u002BxqhVbo8W2g4QA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 07:15:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/miniReddit/css/site.2roo3dw7ml.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2roo3dw7ml"},{"Name":"integrity","Value":"sha256-snV3cKfB6bK\u002BzQBcJQc9zrre0ADDS\u002B5SaQqavz8cRhs="},{"Name":"label","Value":"_content/miniReddit/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1887"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022snV3cKfB6bK\u002BzQBcJQc9zrre0ADDS\u002B5SaQqavz8cRhs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 11:28:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-snV3cKfB6bK\u002BzQBcJQc9zrre0ADDS\u002B5SaQqavz8cRhs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1887"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022snV3cKfB6bK\u002BzQBcJQc9zrre0ADDS\u002B5SaQqavz8cRhs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 11:28:18 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S8SBV6qPexeUOv2s4RYBoEWUnrAsl5/ER3XixYI2xho="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1944"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022S8SBV6qPexeUOv2s4RYBoEWUnrAsl5/ER3XixYI2xho=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 07:14:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/css/site.h18kumucy9.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h18kumucy9"},{"Name":"integrity","Value":"sha256-S8SBV6qPexeUOv2s4RYBoEWUnrAsl5/ER3XixYI2xho="},{"Name":"label","Value":"_content/miniReddit/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1944"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022S8SBV6qPexeUOv2s4RYBoEWUnrAsl5/ER3XixYI2xho=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 07:14:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -120,17 +120,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nxcfakf554"},{"Name":"integrity","Value":"sha256-OzleZmaA7Th5K04uFvsDIVv3HTKBztyzxqZLcsdi4PA="},{"Name":"label","Value":"_content/miniReddit/js/Registration.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1596"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OzleZmaA7Th5K04uFvsDIVv3HTKBztyzxqZLcsdi4PA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 11:02:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/miniReddit/js/site.en7q4r3dx3.js">
+    <StaticWebAssetEndpoint Include="_content/miniReddit/js/site.burorn5xni.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"en7q4r3dx3"},{"Name":"integrity","Value":"sha256-OunLJrrnxat9xjvOrLYbaamc3Zp\u002BkupjpdzQXqbedbs="},{"Name":"label","Value":"_content/miniReddit/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3029"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OunLJrrnxat9xjvOrLYbaamc3Zp\u002BkupjpdzQXqbedbs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 07:15:43 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"burorn5xni"},{"Name":"integrity","Value":"sha256-DRZ1F8aeQ9qeV0DtH7SFOw1ux7USzF4V\u002BvW2PVdL2i8="},{"Name":"label","Value":"_content/miniReddit/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3032"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DRZ1F8aeQ9qeV0DtH7SFOw1ux7USzF4V\u002BvW2PVdL2i8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 13:43:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OunLJrrnxat9xjvOrLYbaamc3Zp\u002BkupjpdzQXqbedbs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3029"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OunLJrrnxat9xjvOrLYbaamc3Zp\u002BkupjpdzQXqbedbs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 07:15:43 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DRZ1F8aeQ9qeV0DtH7SFOw1ux7USzF4V\u002BvW2PVdL2i8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3032"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DRZ1F8aeQ9qeV0DtH7SFOw1ux7USzF4V\u002BvW2PVdL2i8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 13:43:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
@@ -438,17 +438,11 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pj5nd1wqec"},{"Name":"integrity","Value":"sha256-KzNVR3p7UZGba94dnCtlc6jXjK5urSPiZ/eNnKTmDkw="},{"Name":"label","Value":"_content/miniReddit/lib/bootstrap/dist/css/bootstrap.css.map"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"679755"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022KzNVR3p7UZGba94dnCtlc6jXjK5urSPiZ/eNnKTmDkw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 07:29:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"46ein0sx1k"},{"Name":"integrity","Value":"sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g="},{"Name":"label","Value":"_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"232803"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 07:29:50 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"232803"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 07:29:50 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WI3/I49DegfR77AmaDrs/GmkC/Yz9enDHe5iXNKEvGw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"232900"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WI3/I49DegfR77AmaDrs/GmkC/Yz9enDHe5iXNKEvGw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 08:19:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map'))</AssetFile>
@@ -461,6 +455,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v0zj4ognzu"},{"Name":"integrity","Value":"sha256-8SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP\u002BGXYc3V1WwFs="},{"Name":"label","Value":"_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.css.map"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"589892"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00228SM4U2NQpCLGTQLW5D/x3qSTwxVq2CP\u002BGXYc3V1WwFs=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 07:29:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.wuprjd7kxx.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wuprjd7kxx"},{"Name":"integrity","Value":"sha256-WI3/I49DegfR77AmaDrs/GmkC/Yz9enDHe5iXNKEvGw="},{"Name":"label","Value":"_content/miniReddit/lib/bootstrap/dist/css/bootstrap.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"232900"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WI3/I49DegfR77AmaDrs/GmkC/Yz9enDHe5iXNKEvGw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 08:19:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.rtl.css'))</AssetFile>

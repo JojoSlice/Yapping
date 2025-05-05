@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function welcome() {
-        fetch("api/User/user", {
+        fetch("api/userApi/user", {
             credentials: "include"
         })
             .then(respons => {

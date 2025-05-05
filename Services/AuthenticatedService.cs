@@ -27,6 +27,7 @@ namespace miniReddit.Services
                 var userid = user?.FindFirst(ClaimTypes.NameIdentifier).Value;
                 if (userid != null)
                 {
+                    Console.WriteLine($"auth ger: {userid}");
                     return userid;
                 }
                 return string.Empty;
