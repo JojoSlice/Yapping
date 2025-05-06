@@ -53,15 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 } return respons.json();
             })
             .then(data => {
+                console.log("data loggas");
                 console.log(data);
-                userdata = data;
-                const username = data.user.result.username;
+                console.log(data.id);
+
+                const username = data.username;
                 const welcomeMessage = `Welcome ${username}`;
                 console.log(welcomeMessage);
                 wlcText.style.display = "block";
                 wlcText.innerText = welcomeMessage;
-                let path = data.user.result.profileImg.replace("~", "");
+                let path = data.profileimg.replace("~", "");
                 profileImg.src = path;
+                console.log(path);
             })
             .catch(error => {
                 console.error("Failed to fetch user: ", error);

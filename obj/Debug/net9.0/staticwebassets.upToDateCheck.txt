@@ -43,6 +43,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\img\eye-open.svg
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\ProfileSettings.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
@@ -53,7 +54,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\ProfilePage.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\ProfilePage.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation\LICENSE.md
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
@@ -74,7 +74,7 @@ wwwroot\img\eye-open.svg
 wwwroot\img\logo.png
 wwwroot\img\stockProfileImg.png
 wwwroot\js\Index.js
-wwwroot\js\ProfilePage.js
+wwwroot\js\ProfileSettings.js
 wwwroot\js\Registration.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

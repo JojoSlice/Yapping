@@ -1,0 +1,49 @@
+﻿@page
+@model miniReddit.Pages.ProfileSettingsModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/ProfilePage.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <img class="img-thumbnail" src="@Url.Content(Model.AktiveUser.ProfileImg)" alt="profile img" />
+                    <button id="changeProfileImg" class="btn btn-secondary">Change</button>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label >Username: </label> @Model.AktiveUser.Username
+                        </li>
+                        <li class="list-group-item">
+                            <label >Email: </label> @Model.AktiveUser.Email
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary">Posts <span class="badge">0</span> </button>
+                    <button class="btn btn-secondary">Comments <span class="badge">0</span> </button>
+                </div>
+            </div>
+        </div>
+        <div class="ChangePicture" id="changeimg">
+
+        <div class="col-4 ChangeContainer">
+            <form method="post" enctype="multipart/form-data">
+                <div class="card">
+                    <img class="card-img-top" src="@Url.Content(Model.AktiveUser.ProfileImg)" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Only .png and .jpg allowed</h5>
+                        <input type="file" asp-for="NewImg" />
+                        <span asp-validation-for="NewImg"></span>
+                        <input id="upload" type="submit" class="btn btn-secondary" value="Confirm" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="~/js/ProfileSettings.js"></script>
+</body>

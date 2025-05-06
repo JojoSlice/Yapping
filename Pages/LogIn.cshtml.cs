@@ -23,13 +23,14 @@ namespace miniReddit.Pages
 
         public async Task<IActionResult> OnPostAsync()
         {
-            Console.WriteLine("LogIn försök");
             if (!ModelState.IsValid)
                 return Page();
 
             if (await _userManager.LogIn(UserName, Password))
             {
                 var userId = await _userManager.GetUserIdAsync(UserName);
+
+                Console.WriteLine(userId);  
 
                 var claims = new List<Claim>
                 {
