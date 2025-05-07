@@ -8,27 +8,10 @@ a.navbar-brand[b-j28iq3blb6] {
   word-break: break-all;
 }
 
-a[b-j28iq3blb6] {
-  color: #0077cc;
-}
-
-.btn-primary[b-j28iq3blb6] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
 
 .nav-pills .nav-link.active[b-j28iq3blb6], .nav-pills .show > .nav-link[b-j28iq3blb6] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top[b-j28iq3blb6] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-j28iq3blb6] {
-  border-bottom: 1px solid #e5e5e5;
+  color: black;
+  border-color: black;
 }
 
 .box-shadow[b-j28iq3blb6] {

@@ -20,7 +20,7 @@ namespace miniReddit.APIManager
             Console.WriteLine("Changie");
             try
             {
-                var response = await _httpClient.GetAsync(url + "changePic?id=" + id + "path=" + path);
+                var response = await _httpClient.GetAsync(url + "changePic?id=" + id + "&path=" + path);
                 response.EnsureSuccessStatusCode();
                 return true;
             }
