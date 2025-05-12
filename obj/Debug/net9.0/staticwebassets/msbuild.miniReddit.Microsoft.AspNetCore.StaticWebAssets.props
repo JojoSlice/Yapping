@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>h18kumucy9</Fingerprint>
-      <Integrity>S8SBV6qPexeUOv2s4RYBoEWUnrAsl5/ER3XixYI2xho=</Integrity>
+      <Fingerprint>o6hhwy7yoh</Fingerprint>
+      <Integrity>QEmE7SPfn3Q7q0efn0HulXaPRQgCpZ94JyOhaQquBbg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -1278,23 +1278,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\miniReddit.i8075e779n.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\miniReddit.3slq1dkz0w.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>miniReddit</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/miniReddit</BasePath>
-      <RelativePath>miniReddit.i8075e779n.bundle.scp.css</RelativePath>
+      <RelativePath>miniReddit.3slq1dkz0w.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>i8075e779n</Fingerprint>
-      <Integrity>Drazr69IUR7Cmb7W62BGn3Ih1HxkwrafIX/3Um3tmDQ=</Integrity>
+      <Fingerprint>3slq1dkz0w</Fingerprint>
+      <Integrity>PRoZzTnL1WryL3wRCASmzVeDSEovrw0h88NdX+udXtg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\miniReddit.i8075e779n.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\miniReddit.3slq1dkz0w.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\0dd8713e-22fa-49c8-8303-b669a18fdb3c.png'))">
       <SourceType>Package</SourceType>
@@ -1421,6 +1421,60 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\df1096c0-0cab-466b-aa4d-72f0f2ed1df5.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jojo\4be63d34-56fe-4499-b0c4-7df836647679.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>miniReddit</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/miniReddit</BasePath>
+      <RelativePath>uploads/jojo/4be63d34-56fe-4499-b0c4-7df836647679.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5pc7i596gf</Fingerprint>
+      <Integrity>CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jojo\4be63d34-56fe-4499-b0c4-7df836647679.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jojo\5cc556eb-0a29-4f86-8f83-546fc7c3db55.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>miniReddit</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/miniReddit</BasePath>
+      <RelativePath>uploads/jojo/5cc556eb-0a29-4f86-8f83-546fc7c3db55.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5pc7i596gf</Fingerprint>
+      <Integrity>CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jojo\5cc556eb-0a29-4f86-8f83-546fc7c3db55.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jojo\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>miniReddit</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/miniReddit</BasePath>
+      <RelativePath>uploads/jojo/8ed95b13-6c95-4ab6-9036-ebb430ec201e.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5pc7i596gf</Fingerprint>
+      <Integrity>CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jojo\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Skärmbild 2024-09-01 210307.png'))">
       <SourceType>Package</SourceType>

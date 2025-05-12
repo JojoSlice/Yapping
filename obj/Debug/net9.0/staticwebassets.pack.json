@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\miniReddit.bundle.scp.css",
-      "PackagePath": "staticwebassets\\miniReddit.i8075e779n.bundle.scp.css"
+      "PackagePath": "staticwebassets\\miniReddit.3slq1dkz0w.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\css\\ProfilePage.css",
@@ -319,6 +319,18 @@
     {
       "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\df1096c0-0cab-466b-aa4d-72f0f2ed1df5.png",
       "PackagePath": "staticwebassets\\uploads\\df1096c0-0cab-466b-aa4d-72f0f2ed1df5.png"
+    },
+    {
+      "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\jojo\\4be63d34-56fe-4499-b0c4-7df836647679.png",
+      "PackagePath": "staticwebassets\\uploads\\jojo\\4be63d34-56fe-4499-b0c4-7df836647679.png"
+    },
+    {
+      "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\jojo\\5cc556eb-0a29-4f86-8f83-546fc7c3db55.png",
+      "PackagePath": "staticwebassets\\uploads\\jojo\\5cc556eb-0a29-4f86-8f83-546fc7c3db55.png"
+    },
+    {
+      "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\jojo\\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png",
+      "PackagePath": "staticwebassets\\uploads\\jojo\\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.miniReddit.props",

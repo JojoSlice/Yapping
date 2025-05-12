@@ -9,7 +9,13 @@ namespace miniReddit
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddHttpClient<APIManager.UserManager>();
+            builder.Services.AddHttpClient<APIManager.PostManager>();
+            builder.Services.AddHttpClient<APIManager.CommentManager>();
+            builder.Services.AddHttpClient<APIManager.CategoryManager>();
             builder.Services.AddScoped<APIManager.UserManager>();
+            builder.Services.AddScoped<APIManager.PostManager>();
+            builder.Services.AddScoped<APIManager.CommentManager>();
+            builder.Services.AddScoped<APIManager.CategoryManager>();
             builder.Services.AddScoped<Services.AuthenticationService>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddAuthentication("MyCookieAuth")

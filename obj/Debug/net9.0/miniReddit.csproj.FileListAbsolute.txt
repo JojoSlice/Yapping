@@ -76,8 +76,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\j4
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\6mp5lrit8v-muycvpuwrr.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\h215q1xk4m-87fc7y1x7t.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\q3213xry8n-mlv21k5csn.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\ybhk4astzd-i8075e779n.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hrzxk4nnwo-i8075e779n.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -237,8 +235,10 @@ C:\Users\Johan\web\Yapping\obj\Debug\net9.0\ref\miniReddit.dll
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\pcbbrc04y5-en7q4r3dx3.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-h18kumucy9.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\y7rbfz3grm-wuprjd7kxx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-81k9bpaq33.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\meysnzd20e-qyusl6qksv.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-xg96mg2woi.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-o6hhwy7yoh.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\ybhk4astzd-3slq1dkz0w.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hrzxk4nnwo-3slq1dkz0w.gz
