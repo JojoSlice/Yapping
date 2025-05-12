@@ -132,12 +132,29 @@ namespace miniReddit.APIManager
                 var user = JsonSerializer.Deserialize<Models.User>(result);
                 if (user != null)
                 {
-                    Console.WriteLine(user.ProfileImg);
                     return user;
                 }
                 throw new Exception("User not found");
             }
             return new Models.User();
+        }
+
+        public async Task<Models.User> GetUserById(string id)
+        {
+            var response = await _httpClient.GetAsync(url + "GetUserFromId?userid=" + id);
+            response.EnsureSuccessStatusCode();
+            var result = await response.Content.ReadAsStringAsync();
+            if (!string.IsNullOrEmpty(result))
+            {
+                var user = JsonSerializer.Deserialize<Models.User>(result);
+                if (user != null)
+                {
+                    return user;
+                }
+                throw new Exception("User not found");
+            }
+            return new Models.User();
+
         }
     }
 }

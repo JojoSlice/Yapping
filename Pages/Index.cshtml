@@ -3,6 +3,9 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<head>
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+</head>
 <body>
 
         <div class="row">
@@ -20,7 +23,7 @@
             </div>
                 <button id="newPost" class="btn btn-primary m-1">New post</button>
             </div>
-    <div class="container" id="PostContainter">
+    <div class="container" id="postContainter">
 
                 <div class="row">
                     <div class="col-2 m-1 card">
@@ -48,29 +51,35 @@
             </div>
         </div>
 
-
-
-
-
-        @if(Model.Posts.Any())
-        {
-            <div class="row p-1 border col-8">
-            
-            @foreach (var post in Model.Posts)
-            {
-                <div class="col-3 p-1" id="postUserInfo">
-
+<div id="postModal" class="newPost">
+        <div class="newPostContainer">
+            <form method="post" enctype="multipart/form-data">
+                <div>
+                    <label asp-for="Category"></label>
+                    <input asp-for="Category" />
+                    <span asp-validation-for="Category"></span>
                 </div>
-                <div class="post col-7 p-1" data-createdat="@post.CreatedAt.ToString("o")">
-                    <h3>@post.Title</h3>
-                    <h6>@{ await Model.GetCategoryName(post.CategoryId);}</h6>
-                    <p>@post.Content</p>
+                <div>
+                    <label asp-for="Title"></label>
+                    <input asp-for="Title" />
+                    <span asp-validation-for="Title"></span>
                 </div>
-                <hr class="m-2" />
-            }
-            </div>
-        }
-    
+                <div>
+                    <label asp-for="TextContent"></label>
+                    <input width="100px" height="50px" asp-for="TextContent" />
+                    <span asp-validation-for="TextContent"></span>
+                </div>
+                <div>
+                        <h5 class="card-title">Only .png and .jpg allowed</h5>
+                        <input type="file" asp-for="Img" />
+                </div>
+                <div>
+                    <input type="submit" value="Post" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+       
     <script src="/js/Index.js"></script>
 
 </body>

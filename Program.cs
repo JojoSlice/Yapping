@@ -16,6 +16,7 @@ namespace miniReddit
             builder.Services.AddScoped<APIManager.PostManager>();
             builder.Services.AddScoped<APIManager.CommentManager>();
             builder.Services.AddScoped<APIManager.CategoryManager>();
+            builder.Services.AddScoped<Services.ImgUpload>();
             builder.Services.AddScoped<Services.AuthenticationService>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddAuthentication("MyCookieAuth")

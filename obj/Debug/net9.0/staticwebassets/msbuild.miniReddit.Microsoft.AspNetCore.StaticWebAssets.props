@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Index.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>miniReddit</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/miniReddit</BasePath>
+      <RelativePath>css/Index.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0jfapy9hyx</Fingerprint>
+      <Integrity>HL4B4Xvunrppyq2nKt6zTDvKEJX26cMD+wOQQ1Xp2x0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Index.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ProfilePage.css'))">
       <SourceType>Package</SourceType>
       <SourceId>miniReddit</SourceId>
@@ -138,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f8bdap3csz</Fingerprint>
-      <Integrity>H/iz99KCJV8U3QSzw6rpgyxwPPIDnUUUyyr8VZ1cVvw=</Integrity>
+      <Fingerprint>6htih0vsw5</Fingerprint>
+      <Integrity>ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</OriginalItemSpec>

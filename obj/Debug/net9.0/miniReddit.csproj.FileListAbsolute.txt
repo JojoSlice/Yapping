@@ -111,7 +111,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.We
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.WebPages.Razor.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\System.Web.WebPages.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-f8bdap3csz.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\miniReddit.sourcelink.json
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.csproj.AssemblyReference.cache
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\miniReddit.GeneratedMSBuildEditorConfig.editorconfig
@@ -242,3 +241,5 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qf
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-o6hhwy7yoh.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\ybhk4astzd-3slq1dkz0w.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hrzxk4nnwo-3slq1dkz0w.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\f585o3g01c-0jfapy9hyx.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-6htih0vsw5.gz

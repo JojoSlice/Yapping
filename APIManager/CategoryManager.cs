@@ -27,5 +27,20 @@ namespace miniReddit.APIManager
             }
             return new Models.Category();
         }
+
+        public async Task<Models.Category> CategoryCheck(string name)
+        {
+            var response = await _httpClient.GetAsync($"{url}check?name={name}");
+            response.EnsureSuccessStatusCode();
+
+            var result = await response.Content.ReadAsStringAsync();
+
+            if (result != null)
+            {
+                var cat = JsonSerializer.Deserialize<Models.Category>(result);
+                if (cat != null) return cat;  
+            }
+            return new Models.Category();
+        }
     }
 }

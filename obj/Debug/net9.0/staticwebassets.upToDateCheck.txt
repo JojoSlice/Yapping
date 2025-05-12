@@ -26,6 +26,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\Index.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\Index.js
@@ -66,6 +67,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\css\Index.css
 wwwroot\css\ProfilePage.css
 wwwroot\css\site.css
 wwwroot\favicon.ico

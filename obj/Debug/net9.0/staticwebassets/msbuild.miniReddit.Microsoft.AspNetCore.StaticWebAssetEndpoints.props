@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/css/Index.0jfapy9hyx.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0jfapy9hyx"},{"Name":"integrity","Value":"sha256-HL4B4Xvunrppyq2nKt6zTDvKEJX26cMD\u002BwOQQ1Xp2x0="},{"Name":"label","Value":"_content/miniReddit/css/Index.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"345"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HL4B4Xvunrppyq2nKt6zTDvKEJX26cMD\u002BwOQQ1Xp2x0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 12:48:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/css/Index.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HL4B4Xvunrppyq2nKt6zTDvKEJX26cMD\u002BwOQQ1Xp2x0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"345"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HL4B4Xvunrppyq2nKt6zTDvKEJX26cMD\u002BwOQQ1Xp2x0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 12:48:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/css/ProfilePage.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ProfilePage.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -84,17 +96,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z54eo15hd8"},{"Name":"integrity","Value":"sha256-aad5dJhXz1CA\u002BJfHbKb4RMKqIGS7us2l1WmKdWbc8g4="},{"Name":"label","Value":"_content/miniReddit/img/stockProfileImg.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16374"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022aad5dJhXz1CA\u002BJfHbKb4RMKqIGS7us2l1WmKdWbc8g4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 11:16:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/miniReddit/js/Index.f8bdap3csz.js">
+    <StaticWebAssetEndpoint Include="_content/miniReddit/js/Index.6htih0vsw5.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f8bdap3csz"},{"Name":"integrity","Value":"sha256-H/iz99KCJV8U3QSzw6rpgyxwPPIDnUUUyyr8VZ1cVvw="},{"Name":"label","Value":"_content/miniReddit/js/Index.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1325"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022H/iz99KCJV8U3QSzw6rpgyxwPPIDnUUUyyr8VZ1cVvw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 12:16:07 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6htih0vsw5"},{"Name":"integrity","Value":"sha256-ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU="},{"Name":"label","Value":"_content/miniReddit/js/Index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4379"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 12:51:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/js/Index.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H/iz99KCJV8U3QSzw6rpgyxwPPIDnUUUyyr8VZ1cVvw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1325"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022H/iz99KCJV8U3QSzw6rpgyxwPPIDnUUUyyr8VZ1cVvw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 12:16:07 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4379"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 12:51:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/js/ProfileSettings.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ProfileSettings.js'))</AssetFile>
