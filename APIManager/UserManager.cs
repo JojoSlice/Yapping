@@ -1,6 +1,5 @@
 ﻿using System.Text.Json;
 using System.Text;
-using System.Web.Mvc;
 
 namespace miniReddit.APIManager
 {
@@ -15,9 +14,36 @@ namespace miniReddit.APIManager
             _authentication = authentication;
         }
 
+        public async Task<bool> CheckUsername(string username)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync(url + "usernameTaken?username=" + username);
+                response.EnsureSuccessStatusCode();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+        public async Task<bool> CheckEmail(string email)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync(url + "emailTaken?username=" + email);
+                response.EnsureSuccessStatusCode();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
         public async Task<bool> ChangeUserImg(string id, string path)
         {
-            Console.WriteLine("Changie");
             try
             {
                 var response = await _httpClient.GetAsync(url + "changePic?id=" + id + "&path=" + path);
@@ -57,6 +83,26 @@ namespace miniReddit.APIManager
             }
         }
 
+        public async Task<bool> Register(Models.User user)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(user);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                string enpoint = $"{url}Register";
+                var response = await _httpClient.PostAsync(enpoint, content);
+                response.EnsureSuccessStatusCode();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
 
         public async Task<string> GetUserIdAsync(string username)
         {
@@ -84,7 +130,6 @@ namespace miniReddit.APIManager
             if (!string.IsNullOrEmpty(result))
             {
                 var user = JsonSerializer.Deserialize<Models.User>(result);
-                Console.WriteLine(user + " : " + user.Username + " userDeserialized------------------------------------");
                 if (user != null)
                 {
                     Console.WriteLine(user.ProfileImg);
@@ -92,7 +137,6 @@ namespace miniReddit.APIManager
                 }
                 throw new Exception("User not found");
             }
-            Console.WriteLine("helvete");
             return new Models.User();
         }
     }
