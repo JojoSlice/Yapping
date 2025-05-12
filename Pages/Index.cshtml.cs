@@ -17,6 +17,7 @@ namespace miniReddit.Pages
 
         public async Task<JsonResult> OnGetMorePostsAsync(DateTime lastCreatedAt)
         {
+            Console.WriteLine("More post körs");
             var morePosts = await _postManager.GetLatestPosts(lastCreatedAt);
             return new JsonResult(morePosts);
         }

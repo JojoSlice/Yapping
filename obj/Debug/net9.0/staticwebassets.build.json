@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MY6+5knEkbUzbJARpFlUW6UuHhk6MKoiFMDuoNoK0rs=",
+  "Hash": "Udsaj4fze0bfVMXiNcg1A9oUD5rv4Vd2Am7OQL1ZnGo=",
   "Source": "miniReddit",
   "BasePath": "_content/miniReddit",
   "Mode": "Default",
@@ -3249,6 +3249,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Skärmbild 2024-09-01 210307.png"
+    },
+    {
+      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\test\\11236b1e-597a-4c57-a101-582c6b498f90.png",
+      "SourceId": "miniReddit",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\",
+      "BasePath": "_content/miniReddit",
+      "RelativePath": "uploads/test/11236b1e-597a-4c57-a101-582c6b498f90#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5pc7i596gf",
+      "Integrity": "CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\test\\11236b1e-597a-4c57-a101-582c6b498f90.png"
     }
   ],
   "Endpoints": [
@@ -25257,6 +25278,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-7SH0CmpPpQyg60SXw7F49hBeeadm1QPJEADAiU7nPM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/test/11236b1e-597a-4c57-a101-582c6b498f90.5pc7i596gf.png",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\test\\11236b1e-597a-4c57-a101-582c6b498f90.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 10:28:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5pc7i596gf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/test/11236b1e-597a-4c57-a101-582c6b498f90.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/test/11236b1e-597a-4c57-a101-582c6b498f90.png",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\test\\11236b1e-597a-4c57-a101-582c6b498f90.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 10:28:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CdKQhQFWoOdgTLjz4pUnExLSZzgZd9tNNWnDubBqQss="
         }
       ]
     }

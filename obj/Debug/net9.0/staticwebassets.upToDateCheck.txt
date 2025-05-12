@@ -148,3 +148,4 @@ wwwroot\uploads\jojo\4be63d34-56fe-4499-b0c4-7df836647679.png
 wwwroot\uploads\jojo\5cc556eb-0a29-4f86-8f83-546fc7c3db55.png
 wwwroot\uploads\jojo\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png
 wwwroot\uploads\Skärmbild 2024-09-01 210307.png
+wwwroot\uploads\test\11236b1e-597a-4c57-a101-582c6b498f90.png

@@ -333,6 +333,10 @@
       "PackagePath": "staticwebassets\\uploads\\jojo\\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png"
     },
     {
+      "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\uploads\\test\\11236b1e-597a-4c57-a101-582c6b498f90.png",
+      "PackagePath": "staticwebassets\\uploads\\test\\11236b1e-597a-4c57-a101-582c6b498f90.png"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.miniReddit.props",
       "PackagePath": "build\\miniReddit.props"
     },

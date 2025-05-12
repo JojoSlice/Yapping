@@ -5,9 +5,8 @@
 }
 <body>
 
-    <div class="container" id="postContainer">
-        <div class="row p-1">
-            <div class="col-2 card m-1 p-1" id="indexMenu">
+        <div class="row">
+            <div class="col-auto card m-1 p-1" id="indexMenu">
 
                 <div class="dropdown m-1">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -19,18 +18,19 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
             </div>
-                <button class="btn btn-primary m-1">New post</button>
+                <button id="newPost" class="btn btn-primary m-1">New post</button>
             </div>
-            <div class="col-8 m-1 card">
+    <div class="container" id="PostContainter">
+
                 <div class="row">
-                    <div class="col-2 m-1 p-1 card">
+                    <div class="col-2 m-1 card">
                         <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
                         <h6 class="card-title">Username</h6>
-                        <button class="btn btn-secondary m-1">View user</button>
-                        <button class="btn btn-secondary m-1">Send message</button>
+                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user</button>
+                        <button class="btn btn-secondary m-1 p-1 text-break">Send message</button>
                     </div>
 
-                    <div class="col-9 m-1 p-1 card">
+                    <div class="col-9 m-1 card">
                         <div class="card-header m-1">
                             <label class="card-title">Title/SubTitle</label>
                         </div>
@@ -52,7 +52,7 @@
 
 
 
-        @* @if(Model.Posts.Any())
+        @if(Model.Posts.Any())
         {
             <div class="row p-1 border col-8">
             
@@ -69,8 +69,7 @@
                 <hr class="m-2" />
             }
             </div>
-        } *@
-    </div>
+        }
     
     <script src="/js/Index.js"></script>
 
