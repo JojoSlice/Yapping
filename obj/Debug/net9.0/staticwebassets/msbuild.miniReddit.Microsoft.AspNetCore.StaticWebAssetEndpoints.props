@@ -96,17 +96,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z54eo15hd8"},{"Name":"integrity","Value":"sha256-aad5dJhXz1CA\u002BJfHbKb4RMKqIGS7us2l1WmKdWbc8g4="},{"Name":"label","Value":"_content/miniReddit/img/stockProfileImg.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16374"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022aad5dJhXz1CA\u002BJfHbKb4RMKqIGS7us2l1WmKdWbc8g4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 11:16:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/miniReddit/js/Index.6htih0vsw5.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6htih0vsw5"},{"Name":"integrity","Value":"sha256-ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU="},{"Name":"label","Value":"_content/miniReddit/js/Index.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4379"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 12:51:49 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/js/Index.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4379"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ugZn\u002BuocdzgvStl9Vg7G2PlcRs2ZOACDm\u002BpRPm1YvzU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 12 May 2025 12:51:49 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SIZ4Mbyala8\u002BS2zcIRRr/hAfsIsnIy3qzj\u002BhO0d3CSU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4255"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SIZ4Mbyala8\u002BS2zcIRRr/hAfsIsnIy3qzj\u002BhO0d3CSU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 07:37:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/miniReddit/js/Index.kduig7pgao.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kduig7pgao"},{"Name":"integrity","Value":"sha256-SIZ4Mbyala8\u002BS2zcIRRr/hAfsIsnIy3qzj\u002BhO0d3CSU="},{"Name":"label","Value":"_content/miniReddit/js/Index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4255"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SIZ4Mbyala8\u002BS2zcIRRr/hAfsIsnIy3qzj\u002BhO0d3CSU=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 07:37:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/miniReddit/js/ProfileSettings.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ProfileSettings.js'))</AssetFile>

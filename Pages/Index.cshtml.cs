@@ -27,13 +27,13 @@ namespace miniReddit.Pages
             Console.WriteLine($"User logged in: {User.Identity?.IsAuthenticated}");
         }
 
-        public async Task<PageResult> OnPostAsync()
+        public async Task<JsonResult> OnPostAsync()
         {
-
             var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userid == null)
-                return Page();
-            var user = await _userManager.GetUserById(userid);    
+                return new JsonResult(new { success = false, message = "User not authenticated" });
+
+            var user = await _userManager.GetUserById(userid);
 
             var cat = await _categoryManager.CategoryCheck(Category);
             var imgPath = string.Empty;
@@ -44,7 +44,16 @@ namespace miniReddit.Pages
 
             var post = new Post(userid, cat.Id, TextContent, Title, imgPath);
 
-            return Page();
+            try
+            {
+                await _postManager.CreatePost(post);
+                return new JsonResult(new { success = true, post });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new JsonResult(new { success = false, message = ex.Message });
+            }
         }
 
         public async Task<JsonResult> OnGetMorePostsAsync(DateTime lastCreatedAt)

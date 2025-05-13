@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Text;
+using System.Text.Json;
 
 namespace miniReddit.APIManager
 {
@@ -26,6 +28,26 @@ namespace miniReddit.APIManager
                     return posts;
             }
             return new List<Models.Post>();
+        }
+
+        public async Task<bool> CreatePost(Models.Post post)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(post);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                string endpoint = $"{url}post";
+                var response = await _httpClient.PostAsync(endpoint, content);
+                response.EnsureSuccessStatusCode();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
     }
 }

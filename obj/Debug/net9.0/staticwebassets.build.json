@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lVlZ8HkLfDOwl2nVi+xita4UagoPUVwa15mj6UdhDYg=",
+  "Hash": "W0IK30I50CUto7cvnrXOJxg8oNmYq5C6XMRpFZMxqos=",
   "Source": "miniReddit",
   "BasePath": "_content/miniReddit",
   "Mode": "Default",
@@ -668,12 +668,12 @@
       "OriginalItemSpec": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-6htih0vsw5.gz",
+      "Identity": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-kduig7pgao.gz",
       "SourceId": "miniReddit",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/miniReddit",
-      "RelativePath": "js/Index#[.{fingerprint=6htih0vsw5}]?.js.gz",
+      "RelativePath": "js/Index#[.{fingerprint=kduig7pgao}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -682,8 +682,8 @@
       "RelatedAsset": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\Index.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "261qhu4le8",
-      "Integrity": "lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo=",
+      "Fingerprint": "sftvbq7hsu",
+      "Integrity": "yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\Index.js"
@@ -1732,8 +1732,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6htih0vsw5",
-      "Integrity": "ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU=",
+      "Fingerprint": "kduig7pgao",
+      "Integrity": "SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Index.js"
@@ -5268,13 +5268,13 @@
       ]
     },
     {
-      "Route": "js/Index.6htih0vsw5.js",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-6htih0vsw5.gz",
+      "Route": "js/Index.js",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-kduig7pgao.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000934579439"
+          "Quality": "0.000888099467"
         }
       ],
       "ResponseHeaders": [
@@ -5284,19 +5284,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1069"
+          "Value": "1125"
         },
         {
           "Name": "ETag",
-          "Value": "\"lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo=\""
+          "Value": "\"yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 12:51:49 GMT"
+          "Value": "Tue, 13 May 2025 07:37:58 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5312,26 +5312,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU=\""
+          "Value": "W/\"SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "6htih0vsw5"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Index.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU="
+          "Value": "sha256-SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU="
         }
       ]
     },
     {
-      "Route": "js/Index.6htih0vsw5.js",
+      "Route": "js/Index.js",
       "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\Index.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5341,7 +5333,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4379"
+          "Value": "4255"
         },
         {
           "Name": "Content-Type",
@@ -5349,11 +5341,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU=\""
+          "Value": "\"SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 12:51:49 GMT"
+          "Value": "Tue, 13 May 2025 07:37:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU="
+        }
+      ]
+    },
+    {
+      "Route": "js/Index.js.gz",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-kduig7pgao.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:37:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw="
+        }
+      ]
+    },
+    {
+      "Route": "js/Index.kduig7pgao.js",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-kduig7pgao.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000888099467"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1125"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:37:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kduig7pgao"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU="
+        }
+      ]
+    },
+    {
+      "Route": "js/Index.kduig7pgao.js",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\Index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 07:37:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5363,7 +5500,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6htih0vsw5"
+          "Value": "kduig7pgao"
         },
         {
           "Name": "label",
@@ -5371,13 +5508,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU="
+          "Value": "sha256-SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU="
         }
       ]
     },
     {
-      "Route": "js/Index.6htih0vsw5.js.gz",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-6htih0vsw5.gz",
+      "Route": "js/Index.kduig7pgao.js.gz",
+      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-kduig7pgao.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5386,7 +5523,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1069"
+          "Value": "1125"
         },
         {
           "Name": "Content-Type",
@@ -5394,11 +5531,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo=\""
+          "Value": "\"yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 12:51:49 GMT"
+          "Value": "Tue, 13 May 2025 07:37:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5416,7 +5553,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6htih0vsw5"
+          "Value": "kduig7pgao"
         },
         {
           "Name": "label",
@@ -5424,144 +5561,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo="
-        }
-      ]
-    },
-    {
-      "Route": "js/Index.js",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-6htih0vsw5.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000934579439"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1069"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 12:51:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU="
-        }
-      ]
-    },
-    {
-      "Route": "js/Index.js",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\Index.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4379"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 12:51:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ugZn+uocdzgvStl9Vg7G2PlcRs2ZOACDm+pRPm1YvzU="
-        }
-      ]
-    },
-    {
-      "Route": "js/Index.js.gz",
-      "AssetFile": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\obj\\Debug\\net9.0\\compressed\\fu5sseb7ea-6htih0vsw5.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1069"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 12:51:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lg4F+/thevrsprrhHaEK6iMDJ5VazQIxs8V86okaLLo="
+          "Value": "sha256-yOmUr1aOzg0Z2ARgGoZz9b6AWT9FN/swgUPWgcKOgHw="
         }
       ]
     },
