@@ -1,61 +1,55 @@
 ﻿@page
-@model miniReddit.Pages.IndexModel
+@model IndexSPARAModel
 @{
+    ViewData["Title"] = "Home page";
 }
 <head>
     <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
 </head>
 <body>
 
-    <div class="row">
-        <div class="col-auto card m-1 p-1" id="indexMenu">
+        <div class="row">
+            <div class="col-auto card m-1 p-1" id="indexMenu">
 
-            <div class="dropdown m-1">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    All Categories
-                </a>
-                <ul class="dropdown-menu">
-                    @foreach(var category in Model.Categories)
-                    {
-                        <li><a class="dropdown-item" href="#">@category.Name</a></li>
-                    }
-                </ul>
+                <div class="dropdown m-1">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
             </div>
-            <button id="newPost" class="btn btn-primary m-1">New post</button>
-        </div>
-        <div class="container" id="postContainer">
-
-
-
-            @foreach (var post in Model.Posts)
-            {
-                var username = await Model.GetUsername(post.UserId);
-                var comments = await Model.GetComments(post.Id);
-                var category = await Model.GetCategory(post.CategoryId);
+                <button id="newPost" class="btn btn-primary m-1">New post</button>
+            </div>
+    <div class="container" id="postContainer">
 
                 <div class="row">
                     <div class="col-2 m-1 card">
                         <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
-                        <h6 class="card-title m-1">@username</h6>
-                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
-                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                        <h6 class="card-title">Username</h6>
+                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user</button>
+                        <button class="btn btn-secondary m-1 p-1 text-break">Send message</button>
                     </div>
 
                     <div class="col-9 m-1 card">
                         <div class="card-header m-1">
-                            <label class="card-title">@category.Name / @post.Title</label>
+                            <label class="card-title">Title/SubTitle</label>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">@post.Text</p>
+                            <p class="card-text">Bla bla bla bla bla bla</p>
                         </div>
-                        <div class="card-footer">
-                            <button class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></button>
-                        </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary m-1">Comment <span class="badge">0</span></button>
+                                <button class="btn btn-info m-1">Like
+                                    <span class="badge">0</span> 
+                                </button> 
+                            </div>
                     </div>
                 </div>
-            }
+            </div>
         </div>
-    </div>
 
 <div id="postModal" class="newPost">
         <div class="newPostContainer">
@@ -86,6 +80,6 @@
         </div>
     </div>
        
-    <script src="/js/IndexTest.js"></script>
+    <script src="/js/Index.js"></script>
 
 </body>

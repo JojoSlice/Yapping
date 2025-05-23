@@ -16,16 +16,52 @@ namespace miniReddit.APIManager
 
         public async Task<List<Models.Post>> GetLatestPosts(DateTime lastPost)
         {
-            var response = await _httpClient.GetAsync(url + "latest?lastCreatedAt=" + lastPost);
+            var response = await _httpClient.GetAsync(url + "latest?lastCreatedAt=" + Uri.EscapeDataString(lastPost.ToString("o")));
             response.EnsureSuccessStatusCode();
 
             var result = await response.Content.ReadAsStringAsync();
 
             if (result != null)
             {
-                var posts = JsonSerializer.Deserialize<List<Models.Post>>(result);
-                if (posts != null)
-                    return posts;
+                try
+                {
+                    var posts = JsonSerializer.Deserialize<List<Models.Post>>(result, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    return posts ?? new List<Models.Post>();
+                }
+                catch (JsonException ex)
+                {
+                    Console.WriteLine($"Deserialization error: {ex.Message}");
+                    return new List<Models.Post>();
+                }
+            }
+            return new List<Models.Post>();
+        }
+
+        public async Task<List<Models.Post>> GetPosts()
+        {
+            var response = await _httpClient.GetAsync(url + "getposts");
+            response.EnsureSuccessStatusCode();
+
+            var result = await response.Content.ReadAsStringAsync();
+
+            if (result != null)
+            {
+                try
+                {
+                    var posts = JsonSerializer.Deserialize<List<Models.Post>>(result, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    return posts ?? new List<Models.Post>();
+                }
+                catch (JsonException ex)
+                {
+                    Console.WriteLine($"Deserialization error: {ex.Message}");
+                    return new List<Models.Post>();
+                }
             }
             return new List<Models.Post>();
         }

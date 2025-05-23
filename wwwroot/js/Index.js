@@ -15,21 +15,51 @@
 
   window.addEventListener("scroll", function () {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      const lastCreatedAt = lastCreatedAt();
-      loadMorePosts(lastCreatedAt);
+        lastCreatedAt().then(createdAt => {
+            if (createdAt) {
+                loadMorePosts(createdAt);
+            } else {
+                console.log("No post found");
+            }
+        })
     }
   });
 
-  function loadMorePosts(lastCreatedAt) {
-    fetch(`/Index?handler=GetMorePosts&lastCreatedAt=${lastCreatedAt}`)
-      .then((response) => response.json())
-      .then((posts) => {
-        posts.forEach((post) => {
-          fetchUserAndCategory(post);
-        });
-      })
-      .catch((error) => console.log("Error loading posts:", error));
-  }
+    function lastCreatedAt() {
+        return fetch('/Index?handler=LastPost')
+            .then(response => response.text()) 
+            .then(text => {
+                console.log("Raw response:", text);
+                try {
+                    return JSON.parse(text);     
+                } catch (e) {
+                    console.error("JSON parse failed:", e);
+                    return null;
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching last post:", error);
+                return null;
+            });
+    }
+
+
+    function loadMorePosts(lastCreatedAt) {
+        fetch(`/Index?handler=MorePosts&lastCreatedAt=${lastCreatedAt}`)
+            .then((response) => {
+                console.log("Raw response:", response);
+                return response.text();
+            })
+            .then((text) => {
+                console.log("Response text:", text);
+                const posts = JSON.parse(text); 
+                posts.forEach((post) => {
+                    fetchUserAndCategory(post);
+                });
+            })
+            .catch((error) => console.log("Error loading posts:", error));
+    }
+
 
   async function fetchUserAndCategory(post) {
     try {

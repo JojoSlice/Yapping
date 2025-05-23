@@ -156,11 +156,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kduig7pgao</Fingerprint>
-      <Integrity>SIZ4Mbyala8+S2zcIRRr/hAfsIsnIy3qzj+hO0d3CSU=</Integrity>
+      <Fingerprint>1zh758gyle</Fingerprint>
+      <Integrity>Q+RSWomA1tbBuCSrxnKFfuNkGNp6npH2SRGZY6avaKQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\indexTest.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>miniReddit</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/miniReddit</BasePath>
+      <RelativePath>js/indexTest.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f7by3o7ogb</Fingerprint>
+      <Integrity>xd8fdrgi/HWi62hWk1SDKzORt7x8rMbeGMLaTAXYRh8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\indexTest.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ProfileSettings.js'))">
       <SourceType>Package</SourceType>

@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace miniReddit.APIManager
 {
@@ -21,10 +22,21 @@ namespace miniReddit.APIManager
 
             if (result != null)
             {
-                var category = JsonSerializer.Deserialize<Models.Category>(result);
-                if (category != null)
-                    return category;
+                try
+                {
+                    var category = JsonSerializer.Deserialize<Models.Category>(result, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    return category ?? throw new Exception("Could not get category");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return new Models.Category();
+                }
             }
+            Console.WriteLine("No category found");
             return new Models.Category();
         }
 
@@ -41,6 +53,22 @@ namespace miniReddit.APIManager
                 if (cat != null) return cat;  
             }
             return new Models.Category();
+        }
+
+        public async Task<List<Models.Category>> GetCategoriesAsync()
+        {
+            var response = await _httpClient.GetAsync(url + "allcategories");
+            response.EnsureSuccessStatusCode();
+        
+            var result = await response.Content.ReadAsStringAsync();
+
+            if (result != null)
+            {
+                var cat = JsonSerializer.Deserialize<List<Models.Category>>(result);
+                if (cat != null) return cat;  
+            }
+            return new List<Models.Category>();
+
         }
     }
 }

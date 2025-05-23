@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\js\\Registration.js"
     },
     {
+      "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\indexTest.js",
+      "PackagePath": "staticwebassets\\js\\indexTest.js"
+    },
+    {
       "Id": "C:\\Users\\Johan\\source\\repos\\miniReddit\\miniReddit\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -17,6 +17,7 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery-validation-
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\indexTest.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\site.css
@@ -76,6 +77,7 @@ wwwroot\img\eye-open.svg
 wwwroot\img\logo.png
 wwwroot\img\stockProfileImg.png
 wwwroot\js\Index.js
+wwwroot\js\indexTest.js
 wwwroot\js\ProfileSettings.js
 wwwroot\js\Registration.js
 wwwroot\js\site.js
