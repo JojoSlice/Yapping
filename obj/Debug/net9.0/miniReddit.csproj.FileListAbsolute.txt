@@ -79,12 +79,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\q3
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets\msbuild.miniReddit.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets\msbuild.miniReddit.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets\msbuild.build.miniReddit.props
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.miniReddit.props
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.miniReddit.props
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\miniReddit.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\refint\miniReddit.dll
@@ -243,4 +237,5 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\yb
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hrzxk4nnwo-3slq1dkz0w.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\f585o3g01c-0jfapy9hyx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-1zh758gyle.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-f7by3o7ogb.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-eg5mdlzl3r.gz

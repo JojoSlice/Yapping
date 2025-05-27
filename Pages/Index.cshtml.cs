@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace miniReddit.Pages
@@ -53,6 +54,26 @@ namespace miniReddit.Pages
             var postUser = await _userManager.GetUserById(userId);
             return postUser.Username;
         }
+
+        public async Task<IActionResult> OnPostLikePostAsync()
+        {
+            Console.WriteLine("OnPostLikePostAsync");
+
+            using var reader = new StreamReader(Request.Body);
+            var body = await reader.ReadToEndAsync();
+            var data = JsonSerializer.Deserialize<Dictionary<string, string>>(body);
+            var postId = data["postId"];
+
+            await _postManager.LikePost(postId);
+            return new OkResult();
+        }
+        public async Task<IActionResult> OnGetLikesOnPost(string postid)
+        {
+            Console.WriteLine("OnGetLikesOnPost");
+            var post = await _postManager.GetPost(postid);
+            var likes = post.Like;
+            return Content(likes.ToString());
+        }
         public async Task<JsonResult> OnPostAsync()
         {
             var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -83,7 +104,7 @@ namespace miniReddit.Pages
         }
         public async Task<List<Models.Post>> GetPostsAsync()
         {
-            Console.WriteLine("Get post körs");
+            Console.WriteLine("Get posts körs");
             var posts = await _postManager.GetPosts();
             return posts;
         }

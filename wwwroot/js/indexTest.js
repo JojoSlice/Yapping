@@ -26,3 +26,35 @@
   //});
 
 });
+
+async function likePost(postid, button) {
+    try {
+        console.log("likePost körs");
+
+        const likeResponse = await fetch(`/Index?handler=LikePost&postid=${postid}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ postId: postid })
+        });
+
+        if (!likeResponse.ok) {
+            throw new Error("Failed to like post");
+        }
+
+        const getLikesResponse = await fetch(`/Index?handler=GetLikesOnPost&postid=${postid}`);
+
+        if (!getLikesResponse.ok) {
+            throw new Error("Failed to get updated likes");
+        }
+
+        const likes = await getLikesResponse.text();
+
+        const badge = button.querySelector('.badge');
+        badge.textContent = likes;
+    } catch (err) {
+        console.error(err);
+    }
+}
+

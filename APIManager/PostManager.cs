@@ -66,6 +66,43 @@ namespace miniReddit.APIManager
             return new List<Models.Post>();
         }
 
+        public async Task LikePost(string postid)
+        {
+            try
+            {
+                var response = await _httpClient.PostAsync(url + postid + "like", null);
+                response.EnsureSuccessStatusCode();
+            }
+            catch (JsonException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public async Task<Models.Post> GetPost(string postid)
+        {
+            Console.WriteLine("GetPost körs nu!!!!!!!!!!!!!!!!");
+            try
+            {
+                var response = await _httpClient.GetAsync(url + "getpost?postid=" + postid);
+                response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+
+                if (result != null)
+                {
+                    var post = JsonSerializer.Deserialize<Models.Post>(result);
+                    Console.WriteLine(post.Id);
+                    if (post != null) return post;
+                }
+                throw new Exception("No post found");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
         public async Task<bool> CreatePost(Models.Post post)
         {
             try
