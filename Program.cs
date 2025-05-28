@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Antiforgery;
+
 namespace miniReddit
 {
     public class Program
@@ -8,6 +10,7 @@ namespace miniReddit
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
             builder.Services.AddHttpClient<APIManager.UserManager>();
             builder.Services.AddHttpClient<APIManager.PostManager>();
             builder.Services.AddHttpClient<APIManager.CommentManager>();
@@ -18,6 +21,9 @@ namespace miniReddit
             builder.Services.AddScoped<APIManager.CategoryManager>();
             builder.Services.AddScoped<Services.ImgUpload>();
             builder.Services.AddScoped<Services.AuthenticationService>();
+
+            builder.Services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
+            
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddAuthentication("MyCookieAuth")
                 .AddCookie("MyCookieAuth", options =>
@@ -52,6 +58,16 @@ namespace miniReddit
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseAuthorization();
+            app.MapGet("antiforgery/token", (IAntiforgery forgeryService, HttpContext context) =>
+            {
+                var tokens = forgeryService.GetAndStoreTokens(context);
+                context.Response.Cookies.Append("XSRF-TOKEN", tokens.RequestToken!,
+                new CookieOptions { HttpOnly = false });
+
+                return Results.Ok();
+            }).RequireAuthorization();
 
             app.MapStaticAssets();
             app.MapRazorPages()

@@ -31,28 +31,45 @@ async function likePost(postid, button) {
     try {
         console.log("likePost körs");
 
-        const likeResponse = await fetch(`/Index?handler=LikePost&postid=${postid}`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ postId: postid })
+
+        var response = await fetch("/antiforgery/token", {
+            method: "GET"
         });
 
-        if (!likeResponse.ok) {
-            throw new Error("Failed to like post");
-        }
+        if (response.ok) {
+            const xsrfToken = document.cookie
+                .split("; ")
+                .find(row => row.startsWith("XSRF-TOKEN="))
+                .split("=")[1];
 
-        const getLikesResponse = await fetch(`/Index?handler=GetLikesOnPost&postid=${postid}`);
+            const likeResponse = await fetch(`/Index?handler=LikePost`, {
+                method: 'POST',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type': 'application/json',
+                    "X-XSRF-TOKEN": xsrfToken,
+                },
+                body: JSON.stringify({ postId: postid })
+            });
 
-        if (!getLikesResponse.ok) {
-            throw new Error("Failed to get updated likes");
-        }
+            if (!likeResponse.ok) {
+                throw new Error("Failed to like post");
+            }
 
-        const likes = await getLikesResponse.text();
+            const getLikesResponse = await fetch(`/Index?handler=LikesOnPost&postid=${postid}`);
 
-        const badge = button.querySelector('.badge');
-        badge.textContent = likes;
+            if (!getLikesResponse.ok) {
+                throw new Error("Failed to get updated likes");
+            }
+
+            const likes = await getLikesResponse.text();
+
+            console.log(likes);
+
+            const badge = button.querySelector('.badge');
+            badge.textContent = likes;
+        } else throw new Error("No authToken");
+
     } catch (err) {
         console.error(err);
     }

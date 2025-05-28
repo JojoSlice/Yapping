@@ -1,12 +1,12 @@
 ﻿@page
 @model miniReddit.Pages.IndexModel
 @{
+
 }
 <head>
     <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
 </head>
 <body>
-
     <div class="row">
         <div class="col-auto card m-1 p-1" id="indexMenu">
 
@@ -32,6 +32,7 @@
                 var username = await Model.GetUsername(post.UserId);
                 var comments = await Model.GetComments(post.Id);
                 var category = await Model.GetCategory(post.CategoryId);
+                string likes = post.Like.ToString();
 
                 <div class="row">
                     <div class="col-2 m-1 card">
@@ -50,7 +51,7 @@
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></button>
-                            <button onclick="likePost('@post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@post.Like</span></button>
+                            <button onclick="likePost('@post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@likes</span></button>
                         </div>
                     </div>
                 </div>

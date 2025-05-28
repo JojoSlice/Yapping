@@ -7,6 +7,7 @@ wwwroot\img\eye-open.svg
 wwwroot\img\logo.png
 wwwroot\img\stockProfileImg.png
 wwwroot\js\Index.js
+wwwroot\js\indexTest.js
 wwwroot\js\ProfileSettings.js
 wwwroot\js\Registration.js
 wwwroot\js\site.js
@@ -82,7 +83,6 @@ wwwroot\uploads\jojo\5cc556eb-0a29-4f86-8f83-546fc7c3db55.png
 wwwroot\uploads\jojo\8ed95b13-6c95-4ab6-9036-ebb430ec201e.png
 wwwroot\uploads\Skärmbild 2024-09-01 210307.png
 wwwroot\uploads\test\11236b1e-597a-4c57-a101-582c6b498f90.png
-wwwroot\js\indexTest.js
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\Index.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\ProfilePage.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\css\site.css

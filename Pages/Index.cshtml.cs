@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace miniReddit.Pages
@@ -61,11 +62,26 @@ namespace miniReddit.Pages
 
             using var reader = new StreamReader(Request.Body);
             var body = await reader.ReadToEndAsync();
-            var data = JsonSerializer.Deserialize<Dictionary<string, string>>(body);
-            var postId = data["postId"];
 
-            await _postManager.LikePost(postId);
+            Console.WriteLine("Raw Body: " + body);
+
+            var data = JsonSerializer.Deserialize<LikeRequest>(body);
+
+            Console.WriteLine(data.PostId);
+
+            if (string.IsNullOrEmpty(data?.PostId))
+            {
+                return BadRequest();
+            }
+
+            await _postManager.LikePost(data.PostId);
             return new OkResult();
+        }
+
+        public class LikeRequest
+        {
+            [JsonPropertyName("postId")]
+            public string PostId { get; set; }
         }
         public async Task<IActionResult> OnGetLikesOnPost(string postid)
         {
