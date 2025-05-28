@@ -19,6 +19,7 @@ namespace miniReddit
             builder.Services.AddScoped<APIManager.PostManager>();
             builder.Services.AddScoped<APIManager.CommentManager>();
             builder.Services.AddScoped<APIManager.CategoryManager>();
+            builder.Services.AddScoped<APIManager.LikeManager>();
             builder.Services.AddScoped<Services.ImgUpload>();
             builder.Services.AddScoped<Services.AuthenticationService>();
 

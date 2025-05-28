@@ -32,8 +32,8 @@
                 var username = await Model.GetUsername(post.UserId);
                 var comments = await Model.GetComments(post.Id);
                 var category = await Model.GetCategory(post.CategoryId);
-                string likes = post.Like.ToString();
-
+                var likes = await Model.GetLikes(post.Id);
+               
                 <div class="row">
                     <div class="col-2 m-1 card">
                         <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
@@ -51,7 +51,7 @@
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></button>
-                            <button onclick="likePost('@post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@likes</span></button>
+                            <button onclick="likePost('@post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@likes.Count()</span></button>
                         </div>
                     </div>
                 </div>

@@ -29,9 +29,6 @@
 
 async function likePost(postid, button) {
     try {
-        console.log("likePost körs");
-
-
         var response = await fetch("/antiforgery/token", {
             method: "GET"
         });
@@ -63,8 +60,6 @@ async function likePost(postid, button) {
             }
 
             const likes = await getLikesResponse.text();
-
-            console.log(likes);
 
             const badge = button.querySelector('.badge');
             badge.textContent = likes;

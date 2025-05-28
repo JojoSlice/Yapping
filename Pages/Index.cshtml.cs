@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 
 namespace miniReddit.Pages
 {
-    public class IndexModel (Services.ImgUpload upload, APIManager.CommentManager commentManager,APIManager.PostManager postManager, APIManager.CategoryManager categoryManager, APIManager.UserManager userManager): PageModel
+    public class IndexModel (Services.ImgUpload upload,APIManager.LikeManager likeManager, APIManager.CommentManager commentManager,APIManager.PostManager postManager, APIManager.CategoryManager categoryManager, APIManager.UserManager userManager): PageModel
     {
         private readonly APIManager.CommentManager _comManager = commentManager;
         private readonly APIManager.UserManager _userManager = userManager;
         private readonly APIManager.PostManager _postManager = postManager;
+        private readonly APIManager.LikeManager _likeManager = likeManager;
         private readonly APIManager.CategoryManager _categoryManager = categoryManager;
         private readonly Services.ImgUpload _upload = upload;
         public List<Models.Post> Posts { get; private set; } = new();
 
         public List<Models.Category> Categories { get; private set; } = new();
+        public Models.User ActiveUser { get; private set; }
 
         [BindProperty]
         public string Title { get; set; } = string.Empty;
@@ -31,6 +33,7 @@ namespace miniReddit.Pages
         {
             Posts = await GetPostsAsync();
             Categories = await GetCategoriesAsync();
+            ActiveUser = await _userManager.GetLoggedInUserAsync();
         }
 
         public async Task<List<Models.Category>> GetCategoriesAsync()
@@ -71,10 +74,13 @@ namespace miniReddit.Pages
 
             if (string.IsNullOrEmpty(data?.PostId))
             {
-                return BadRequest();
+                return BadRequest("No objId found");
             }
+            var user = await _userManager.GetLoggedInUserAsync();
+            if (user == null)
+                return BadRequest("No user found");
 
-            await _postManager.LikePost(data.PostId);
+            await _likeManager.Like(data.PostId, user.Id);
             return new OkResult();
         }
 
@@ -86,9 +92,15 @@ namespace miniReddit.Pages
         public async Task<IActionResult> OnGetLikesOnPost(string postid)
         {
             Console.WriteLine("OnGetLikesOnPost");
-            var post = await _postManager.GetPost(postid);
-            var likes = post.Like;
-            return Content(likes.ToString());
+            var likes = await GetLikes(postid);
+            var likeAmount = likes.Count();
+            return Content(likeAmount.ToString());
+        }
+
+        public async Task<List<Models.Likes>> GetLikes(string objid)
+        {
+            var likes = await _likeManager.GetLikes(objid);
+            return likes.ToList();
         }
         public async Task<JsonResult> OnPostAsync()
         {
