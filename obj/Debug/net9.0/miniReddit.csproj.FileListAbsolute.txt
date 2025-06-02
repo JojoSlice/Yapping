@@ -238,4 +238,5 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hr
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\f585o3g01c-0jfapy9hyx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-1zh758gyle.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json.cache
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-s4gkt6i07s.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-wiwfndscyp.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\s257ly094u-0xidpufk8t.gz

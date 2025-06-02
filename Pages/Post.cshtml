@@ -1,0 +1,86 @@
+﻿@page "{id}"
+@model miniReddit.Pages.PostModel
+@{
+    var postUser = await Model.GetUser(Model.post.UserId);
+    var category = await Model.GetCategory(Model.post.CategoryId);
+    var likes = await Model.GetLikes(Model.post.Id);
+}
+<head>
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+</head>
+<body>
+
+              
+                <div class="row">
+                    <div class="col-2 m-1 card">
+                        <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
+                        <h6 class="card-title m-1">@postUser.Username</h6>
+                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
+                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                    </div>
+
+                    <div class="col-9 m-1 card">
+                        <div class="card-header m-1">
+                            <label class="card-title">@category.Name / @Model.post.Title . Date: @Model.post.CreatedAt</label>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@Model.post.Text</p>
+                        </div>
+                        <div class="card-footer">
+                            <button id="commentBtn" class="btn btn-primary">Comment</button>
+                            <button onclick="likePost('@Model.post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@likes.Count()</span></button>
+                        </div>
+                    </div>
+                </div>
+
+
+    @foreach (var comment in Model.comments)
+    {
+        var commentUser = await Model.GetUser(comment.UserId);
+        var commentLikes = await Model.GetLikes(comment.Id);
+
+        <div class="row">
+                    <div class="col-2 m-1 card">
+                        <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
+                        <h6 class="card-title m-1">@commentUser.Username</h6>
+                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
+                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                    </div>
+
+                    <div class="col-9 m-1 card">
+                        <div class="card-body">
+                            <p class="card-text">@comment.Text</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="likePost('@comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@commentLikes.Count()</span></button>
+                        </div>
+                    </div>
+                </div>
+    }
+
+
+                <div id="postModal" class="newPost">
+        <div class="newPostContainer">
+            <form method="post" enctype="multipart/form-data">
+                <div>
+                    <label asp-for="TextContent"></label>
+                    <input width="100px" height="50px" asp-for="TextContent" />
+                    <span asp-validation-for="TextContent"></span>
+                    <input type="hidden" name="postid" value="@Model.post.Id" />
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Post" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="/js/Post.js"></script>
+
+
+</body>

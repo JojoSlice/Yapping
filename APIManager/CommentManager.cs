@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Text;
+using System.Text.Json;
 
 namespace miniReddit.APIManager
 {
@@ -37,6 +38,28 @@ namespace miniReddit.APIManager
             }
             Console.WriteLine("No comments found");
             return new List<Models.Comment>();
+        }
+
+        public async Task<bool> NewComment(Models.Comment comment)
+        {
+            if (comment == null) return false;
+
+            try
+            {
+                var json = JsonSerializer.Serialize(comment);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                string endpoint = $"{url}new";
+                var response = await _httpClient.PostAsync(endpoint, content);
+                response.EnsureSuccessStatusCode();
+
+                return true;
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
     }
 }

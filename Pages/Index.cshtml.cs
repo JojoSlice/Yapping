@@ -18,7 +18,7 @@ namespace miniReddit.Pages
         public List<Models.Post> Posts { get; private set; } = new();
 
         public List<Models.Category> Categories { get; private set; } = new();
-        public Models.User ActiveUser { get; private set; }
+        public Models.User? ActiveUser { get; private set; }
 
         [BindProperty]
         public string Title { get; set; } = string.Empty;
@@ -33,7 +33,6 @@ namespace miniReddit.Pages
         {
             Posts = await GetPostsAsync();
             Categories = await GetCategoriesAsync();
-            ActiveUser = await _userManager.GetLoggedInUserAsync();
         }
 
         public async Task<List<Models.Category>> GetCategoriesAsync()

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("miniReddit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+286e55f5b3b123083a5c77649b08bf322ef13a62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9844b0ca3f2910ca3fde2ea6124cd15f1993551")]
 [assembly: System.Reflection.AssemblyProductAttribute("miniReddit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("miniReddit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

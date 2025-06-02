@@ -44,13 +44,13 @@
 
                     <div class="col-9 m-1 card">
                         <div class="card-header m-1">
-                            <label class="card-title">@category.Name / @post.Title</label>
+                            <label class="card-title">@category.Name / @post.Title . Date: @post.CreatedAt</label>
                         </div>
                         <div class="card-body">
                             <p class="card-text">@post.Text</p>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></button>
+                            <a asp-page="/Post" asp-route-id="@post.Id" class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></a>
                             <button onclick="likePost('@post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@likes.Count()</span></button>
                         </div>
                     </div>

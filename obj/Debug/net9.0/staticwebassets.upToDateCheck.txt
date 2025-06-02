@@ -8,6 +8,7 @@ wwwroot\img\logo.png
 wwwroot\img\stockProfileImg.png
 wwwroot\js\Index.js
 wwwroot\js\indexTest.js
+wwwroot\js\Post.js
 wwwroot\js\ProfileSettings.js
 wwwroot\js\Registration.js
 wwwroot\js\site.js
@@ -153,3 +154,4 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery\dist\jquery
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\indexTest.js
+C:\Users\Johan\source\repos\miniReddit\miniReddit\wwwroot\js\Post.js
