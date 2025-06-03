@@ -52,10 +52,10 @@ namespace miniReddit.Pages
             return cat;
         }
 
-        public async Task<string> GetUsername(string userId)
+        public async Task<Models.UserInfo> GetUserinfo(string userId)
         {
-            var postUser = await _userManager.GetUserById(userId);
-            return postUser.Username;
+            var postUser = await _userManager.GetUserinfo(userId);
+            return postUser;
         }
 
         public async Task<IActionResult> OnPostLikePostAsync()

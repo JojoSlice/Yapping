@@ -15,6 +15,8 @@ namespace miniReddit.APIManager
         
         public async Task<List<Models.Comment>> GetPostComments(string postid)
         {
+            Console.WriteLine("GetPostComments--------------");
+
             var response = await _httpClient.GetAsync(url + "postcomments?postid=" + postid);
             response.EnsureSuccessStatusCode();
 
@@ -28,11 +30,12 @@ namespace miniReddit.APIManager
                     {
                         PropertyNameCaseInsensitive = true
                     });
+                    Console.WriteLine(comments);
                     return comments ?? throw new Exception("Could not get comments");
                 }
                 catch(Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Error: " + ex.Message);
                     return new List<Models.Comment>();
                 }
             }

@@ -229,7 +229,6 @@ C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\pcbbrc04y5-en7q4r3dx3.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\qfw8nn83dc-7x2ibeyaao.gz
 C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\y7rbfz3grm-wuprjd7kxx.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-81k9bpaq33.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\meysnzd20e-qyusl6qksv.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-xg96mg2woi.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-o6hhwy7yoh.gz
@@ -240,3 +239,4 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-wiwfndscyp.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\s257ly094u-0xidpufk8t.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-au3vv8uv9t.gz

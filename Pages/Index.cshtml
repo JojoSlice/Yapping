@@ -29,15 +29,15 @@
 
             @foreach (var post in Model.Posts)
             {
-                var username = await Model.GetUsername(post.UserId);
+                var userinfo = await Model.GetUserinfo(post.UserId);
                 var comments = await Model.GetComments(post.Id);
                 var category = await Model.GetCategory(post.CategoryId);
                 var likes = await Model.GetLikes(post.Id);
                
                 <div class="row">
                     <div class="col-2 m-1 card">
-                        <img class="img-thumbnail m-1" src="~/img/stockProfileImg.png" />
-                        <h6 class="card-title m-1">@username</h6>
+                        <img class="img-thumbnail m-1" src="@userinfo.ProfileImg" />
+                        <h6 class="card-title m-1">@userinfo.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
                         <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
                     </div>

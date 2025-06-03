@@ -56,11 +56,9 @@ namespace miniReddit
 
             app.UseRouting();
 
-            app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseAuthorization();
             app.MapGet("antiforgery/token", (IAntiforgery forgeryService, HttpContext context) =>
             {
                 var tokens = forgeryService.GetAndStoreTokens(context);

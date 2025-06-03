@@ -120,6 +120,28 @@ namespace miniReddit.APIManager
             }
         }
 
+        public async Task<Models.UserInfo> GetUserinfo(string id)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync(url + "Userinfo?id=" + id);
+                response.EnsureSuccessStatusCode();
+
+                var resultString = await response.Content.ReadAsStringAsync();
+                var userInfo = System.Text.Json.JsonSerializer.Deserialize<Models.UserInfo>(resultString, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+
+                return userInfo ?? throw new Exception("Deserialization failed");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return new();
+            }
+        }
+       
         public async Task<Models.User> GetLoggedInUserAsync()
         {
             var userID = _authentication.GetLoggedInUserId();
