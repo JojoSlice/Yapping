@@ -23,10 +23,8 @@ namespace miniReddit.Models
         [JsonPropertyName("createdat")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        // Parameterlös konstruktor behövs för System.Text.Json
         public Comment() { }
 
-        // Du kan behålla en praktisk konstruktor också om du använder den manuellt
         public Comment(string userid, string postid, string content)
         {
             UserId = userid;

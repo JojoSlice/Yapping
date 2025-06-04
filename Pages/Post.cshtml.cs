@@ -27,18 +27,25 @@ namespace miniReddit.Pages
         public Models.Category? Category { get; set; }
         [BindProperty]
         public List<Models.Likes>? Likes { get; set; }
+        [BindProperty]
+        public string CommentText { get; set; } = string.Empty;
+        [BindProperty]
+        public string CommentId { get; set; } = string.Empty;
 
 
         public async Task OnGet(string id)
         {
             Post = await _postManager.GetPost(id);
             Comments = await GetComments(id);
-            await LoadUser();
+            var isLoggedIn = await LoadUser();
+            if (!isLoggedIn)
+                Console.WriteLine("INTE INLOGGAD -----------------------------------------------------------------------------");
+            else
+                Console.WriteLine("INLOGGAD -----------------------------------------------------------------------------");
+
             PostUser = await GetUserinfo(Post.UserId);
             Category = await GetCategory(Post.CategoryId);
             Likes = await GetLikes(Post.Id);
-
-            Console.WriteLine(AktiveUser.Username + "---------------------------------------");
         }
 
         public async Task<RedirectToPageResult> OnPostAsync()
@@ -68,7 +75,20 @@ namespace miniReddit.Pages
             return RedirectToPage();
 
         }
+        public async Task<IActionResult> OnPostCreateCommentAsync()
+        {
+            Console.WriteLine(CommentId);
+            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
+            var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userid.IsEmpty())
+                return BadRequest();
+           
+            var comment = new Models.Comment() { PostId = CommentId, Text = CommentText, UserId = userid };
+
+            await _comManager.NewComment(comment);
+            return new OkResult();
+        }
         public async Task<List<Models.Comment>> GetComments(string id)
         {
             var comments = await _comManager.GetPostComments(id);
@@ -103,11 +123,18 @@ namespace miniReddit.Pages
         }
         public async Task<bool> LoadUser()
         {
-            AktiveUser = await _userManager.GetLoggedInUserAsync();
-            if (AktiveUser != null)
-                return true;
-            else
+            try
+            {
+                AktiveUser = await _userManager.GetLoggedInUserAsync();
+                if (AktiveUser != null)
+                    return true;
+                else
+                    return false;
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
                 return false;
+            }
         }
 
         public async Task<Models.UserInfo> GetUserinfo(string id)

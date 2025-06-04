@@ -37,6 +37,7 @@
     {
         var userinfo = await Model.GetUserinfo(comment.UserId);
             var commentLikes = await Model.GetLikes(comment.Id);
+            var comments = await Model.GetComments(comment.Id);
 
         <div class="row">
                     <div class="col-2 m-1 card">
@@ -51,6 +52,7 @@
                             <p class="card-text">@comment.Text</p>
                         </div>
                         <div class="card-footer">
+                            <button onclick="commentPost('@comment.Id', this)" class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></button>
                             <button onclick="likePost('@comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@commentLikes.Count()</span></button>
                         </div>
                     </div>
@@ -59,7 +61,7 @@
     }
 
 
-                <div id="postModal" class="newPost">
+    <div id="postModal" class="newPost">
         <div class="newPostContainer">
             <form method="post" enctype="multipart/form-data">
                 <div>
@@ -69,8 +71,19 @@
                     <input type="hidden" name="postid" value="@Model.Post.Id" />
                 </div>
                 <div>
-                    <input id="submit" type="submit" value="Post" class="btn btn-primary" />
+                    <input id="submit" type="submit" value="Comment" class="btn btn-primary" />
                 </div>
+            </form>
+        </div>
+    </div>
+    <div id="commentModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="CreateComment">
+                    <label asp-for="CommentText"></label>
+                    <input width="100px" height="50px" asp-for="CommentText" />
+                    <span asp-validation-for="CommentText"></span>
+                    <input id="commentid" type="hidden" name="CommentId" value="" />
+                <input type="submit" value="Comment" class="btn btn-primary"/>
             </form>
         </div>
     </div>

@@ -45,6 +45,7 @@ namespace miniReddit.APIManager
 
         public async Task<bool> NewComment(Models.Comment comment)
         {
+            Console.WriteLine($"New comment {comment.Id}");
             if (comment == null) return false;
 
             try

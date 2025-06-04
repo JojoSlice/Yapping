@@ -24,7 +24,8 @@ namespace miniReddit.Services
             var user = _httpContextAccessor.HttpContext?.User;
             if (user != null)
             {
-                var userid = user?.FindFirst(ClaimTypes.NameIdentifier).Value;
+                var claim = user?.FindFirst(ClaimTypes.NameIdentifier);
+                string? userid = claim?.Value;
                 if (userid != null)
                 {
                     Console.WriteLine($"auth ger: {userid}");

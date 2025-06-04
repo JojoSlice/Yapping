@@ -1,6 +1,8 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
   const commentBtn = document.getElementById("commentBtn");
   const newPostWindow = document.getElementById("postModal");
+const path = window.location.pathname;
+    console.log(path);
 
   commentBtn.addEventListener("click", function () {
     newPostWindow.style.display = "block";
@@ -12,6 +14,24 @@
   });
 
 });
+
+async function commentPost(commentid, button) {
+    const newCommentWindow = document.getElementById("commentModal");
+    newCommentWindow.style.display = "block";
+
+    document.getElementById("commentid").value = commentid;
+
+    window.addEventListener("click", function (event) {
+        if (event.target === newCommentWindow) {
+            newCommentWindow.style.display = "none";
+        }
+    });
+
+    document.getElementById("commentForm").addEventListener("submit", function (event) {
+        newCommentWindow.style.display = "none";
+    });
+}
+
 
 async function likePost(postid, button) {
     try {
