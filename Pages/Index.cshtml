@@ -17,7 +17,9 @@
                 <ul class="dropdown-menu">
                     @foreach(var category in Model.Categories)
                     {
-                        <li><a class="dropdown-item" href="#">@category.Name</a></li>
+                        <li>
+                            <a class="dropdown-item" asp-page="/Index" asp-route-SelectedCategoryId="@category.Id">@category.Name</a>
+                            </li>
                     }
                 </ul>
             </div>
@@ -27,31 +29,26 @@
 
 
 
-            @foreach (var post in Model.Posts)
+            @foreach (var post in Model.PostViewModels)
             {
-                var userinfo = await Model.GetUserinfo(post.UserId);
-                var comments = await Model.GetComments(post.Id);
-                var category = await Model.GetCategory(post.CategoryId);
-                var likes = await Model.GetLikes(post.Id);
-               
                 <div class="row">
                     <div class="col-2 m-1 card">
-                        <img class="img-thumbnail m-1" src="@userinfo.ProfileImg" />
-                        <h6 class="card-title m-1">@userinfo.Username</h6>
+                        <img class="img-thumbnail m-1" src="@post.UserInfo.ProfileImg" />
+                        <h6 class="card-title m-1">@post.UserInfo.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
                         <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
                     </div>
 
                     <div class="col-9 m-1 card">
                         <div class="card-header m-1">
-                            <label class="card-title">@category.Name / @post.Title . Date: @post.CreatedAt</label>
+                            <label class="card-title">@post.Category.Name / @post.Post.Title . Date: @post.Post.CreatedAt</label>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">@post.Text</p>
+                            <p class="card-text">@post.Post.Text</p>
                         </div>
                         <div class="card-footer">
-                            <a asp-page="/Post" asp-route-id="@post.Id" class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></a>
-                            <button onclick="likePost('@post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@likes.Count()</span></button>
+                            <a asp-page="/Post" asp-route-id="@post.Post.Id" class="btn btn-secondary m-1">Comment <span class="badge">@post.Comments.Count()</span></a>
+                            <button onclick="likePost('@post.Post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@post.Likes.Count()</span></button>
                         </div>
                     </div>
                 </div>

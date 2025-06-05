@@ -20,8 +20,6 @@ namespace miniReddit.Pages
         [BindProperty]
         public string Postid { get; set; } = string.Empty;
         [BindProperty]
-        public Models.User? AktiveUser { get; set; }
-        [BindProperty]
         public Models.UserInfo? PostUser { get; set; }
         [BindProperty]
         public Models.Category? Category { get; set; }
@@ -31,18 +29,14 @@ namespace miniReddit.Pages
         public string CommentText { get; set; } = string.Empty;
         [BindProperty]
         public string CommentId { get; set; } = string.Empty;
+        public List<CommentViewModel> ViewComments { get; set; } = new();
 
 
         public async Task OnGet(string id)
         {
             Post = await _postManager.GetPost(id);
             Comments = await GetComments(id);
-            var isLoggedIn = await LoadUser();
-            if (!isLoggedIn)
-                Console.WriteLine("INTE INLOGGAD -----------------------------------------------------------------------------");
-            else
-                Console.WriteLine("INLOGGAD -----------------------------------------------------------------------------");
-
+            ViewComments = await GetCommentViewModelList(Comments);
             PostUser = await GetUserinfo(Post.UserId);
             Category = await GetCategory(Post.CategoryId);
             Likes = await GetLikes(Post.Id);
@@ -75,19 +69,34 @@ namespace miniReddit.Pages
             return RedirectToPage();
 
         }
-        public async Task<IActionResult> OnPostCreateCommentAsync()
+        public async Task<RedirectToPageResult> OnPostCreateCommentAsync()
         {
-            Console.WriteLine(CommentId);
-            Console.WriteLine("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-
             var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userid.IsEmpty())
-                return BadRequest();
+                return RedirectToPage();
            
             var comment = new Models.Comment() { PostId = CommentId, Text = CommentText, UserId = userid };
 
             await _comManager.NewComment(comment);
-            return new OkResult();
+            return RedirectToPage();
+        }
+        public async Task<List<CommentViewModel>> GetCommentViewModelList(List<Models.Comment> comments)
+        {
+            var ViewCommentsModel = new List<CommentViewModel>();
+            foreach (var comment in comments)
+            {
+                var repliesToComment = await GetComments(comment.Id);
+
+                var viewModel = new CommentViewModel
+                {
+                    Comment = comment,
+                    UserInfo = await GetUserinfo(comment.UserId),
+                    Likes = await GetLikes(comment.Id),
+                    Replies = await GetCommentViewModelList(repliesToComment.ToList())
+                };
+                ViewCommentsModel.Add(viewModel);
+            }
+            return ViewCommentsModel;
         }
         public async Task<List<Models.Comment>> GetComments(string id)
         {
@@ -112,35 +121,18 @@ namespace miniReddit.Pages
             else
                 return new();
         }
-        public async Task<Models.User> GetUser(string id)
-        {
-            Console.WriteLine(id);
-            var user = await _userManager.GetUserById(id);
-            if (user != null)
-                return user;
-            else
-                return new();
-        }
-        public async Task<bool> LoadUser()
-        {
-            try
-            {
-                AktiveUser = await _userManager.GetLoggedInUserAsync();
-                if (AktiveUser != null)
-                    return true;
-                else
-                    return false;
-            } catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return false;
-            }
-        }
-
+               
         public async Task<Models.UserInfo> GetUserinfo(string id)
         {
             return await _userManager.GetUserinfo(id);
         }
 
+    }
+    public class CommentViewModel
+    {
+        public Models.Comment Comment { get; set; }
+        public Models.UserInfo UserInfo { get; set; }
+        public List<Models.Likes> Likes { get; set; }
+        public List<CommentViewModel> Replies { get; set; }
     }
 }

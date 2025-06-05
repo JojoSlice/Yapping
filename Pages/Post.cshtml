@@ -30,34 +30,56 @@
                 </div>
 
 
-    @if(Model.Post != null)
-    {
         
-    foreach (var comment in Model.Comments)
+    @foreach (var comment in Model.ViewComments)
     {
-        var userinfo = await Model.GetUserinfo(comment.UserId);
-            var commentLikes = await Model.GetLikes(comment.Id);
-            var comments = await Model.GetComments(comment.Id);
-
         <div class="row">
-                    <div class="col-2 m-1 card">
-                        <img class="img-thumbnail m-1" src="@userinfo.ProfileImg" />
-                        <h6 class="card-title m-1">@userinfo.Username</h6>
+            <div class="col-1">
+
+            </div>
+
+                    <div class="col-1 m-1 card">
+                        <img class="img-thumbnail m-1" src="@comment.UserInfo.ProfileImg" />
+                        <h6 class="card-title m-1">@comment.UserInfo.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
                         <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
                     </div>
 
                     <div class="col-9 m-1 card">
                         <div class="card-body">
-                            <p class="card-text">@comment.Text</p>
+                            <p class="card-text">@comment.Comment.Text</p>
                         </div>
                         <div class="card-footer">
-                            <button onclick="commentPost('@comment.Id', this)" class="btn btn-secondary m-1">Comment <span class="badge">@comments.Count()</span></button>
-                            <button onclick="likePost('@comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@commentLikes.Count()</span></button>
+                            <button onclick="commentPost('@comment.Comment.Id', this)" class="btn btn-secondary m-1">Comment <span class="badge">@comment.Replies.Count()</span></button>
+                            <button onclick="likePost('@comment.Comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@comment.Likes.Count()</span></button>
                         </div>
                     </div>
+        </div>
+        @foreach (var reply in comment.Replies)
+        {
+            <div class="row">
+                    <div class="col-2">
+
                 </div>
-    }
+
+                    <div class="col-1 m-1 card">
+                        <img class="img-thumbnail m-1" src="@reply.UserInfo.ProfileImg" />
+                        <h6 class="card-title m-1">@reply.UserInfo.Username</h6>
+                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
+                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                    </div>
+
+                    <div class="col-8 m-1 card">
+                        <div class="card-body">
+                            <p class="card-text">@reply.Comment.Text</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="likePost('@reply.Comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@reply.Likes.Count()</span></button>
+                        </div>
+                    </div>
+
+            </div>
+        }
     }
 
 

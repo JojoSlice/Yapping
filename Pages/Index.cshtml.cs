@@ -16,6 +16,7 @@ namespace miniReddit.Pages
         private readonly APIManager.CategoryManager _categoryManager = categoryManager;
         private readonly Services.ImgUpload _upload = upload;
         public List<Models.Post> Posts { get; private set; } = new();
+        public List<PostViewModel> PostViewModels { get; private set; } = new();
 
         public List<Models.Category> Categories { get; private set; } = new();
         public Models.User? ActiveUser { get; private set; }
@@ -29,10 +30,25 @@ namespace miniReddit.Pages
         [BindProperty]
         public IFormFile? Img { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string? SelectedCategoryId { get; set; }
+
+
         public async Task OnGet()
         {
             Posts = await GetPostsAsync();
             Categories = await GetCategoriesAsync();
+
+            if (!string.IsNullOrEmpty(SelectedCategoryId))
+            {
+                Posts = Posts.Where(p => p.CategoryId == SelectedCategoryId).ToList();
+            }
+
+            foreach (var post in Posts)
+            {
+                var postModel = await CreatePostViewModel(post);
+                PostViewModels.Add(postModel);
+            }
         }
 
         public async Task<List<Models.Category>> GetCategoriesAsync()
@@ -134,6 +150,27 @@ namespace miniReddit.Pages
             Console.WriteLine("Get posts körs");
             var posts = await _postManager.GetPosts();
             return posts;
+        }
+        public async Task<PostViewModel> CreatePostViewModel(Models.Post post)
+        {
+            var postModel = new PostViewModel
+            {
+                Post = post,
+                Likes = await GetLikes(post.Id),
+                Comments = await GetComments(post.Id),
+                UserInfo = await GetUserinfo(post.UserId),
+                Category = await GetCategory(post.CategoryId),
+            };
+            return postModel; 
+        }
+
+        public class PostViewModel
+        {
+            public Models.Post Post { get; set; }
+            public List<Models.Likes> Likes { get; set; }
+            public List<Models.Comment> Comments { get; set; }
+            public Models.UserInfo UserInfo { get; set; }
+            public Models.Category Category { get; set; }
         }
     }
 }
