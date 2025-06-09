@@ -1,0 +1,51 @@
+﻿@page
+@model miniReddit.Pages.MessegesModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-auto card m-1 p-1" id="indexMenu">
+
+            <div class="dropdown m-1">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Messeges
+                </a>
+                <ul class="dropdown-menu">
+                    @foreach(var sender in Model.Senders)
+                    {
+                        <li>
+                            <a class="dropdown-item" asp-page="/Index" asp-route-SelectedCategoryId="@sender.UserId">@sender.Username</a>
+                            </li>
+                    }
+                </ul>
+            </div>
+            <button id="newMessage" class="btn btn-primary m-1">New Message</button>
+        </div>
+        <div class="container" id="postContainer">
+
+            @foreach (var message in Model.MessageModels)
+            {
+                <div class="row">
+                    <div class="col-2 m-1 card">
+                        <img class="img-thumbnail m-1" src="@message.UserInfo.ProfileImg" />
+                        <h6 class="card-title m-1">@message.UserInfo.Username</h6>
+                        <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
+                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                    </div>
+
+                    <div class="col-9 m-1 card">
+                        <div class="card-body">
+                            <p class="card-text">@message.Message.Text</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="reply('@message.Message.Id', this)" class="btn btn-secondary m-1">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            }
+    </div>
+
+    </body>
