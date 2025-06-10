@@ -96,3 +96,12 @@ body {
 .profileImg:hover {
     border: 2px solid orange;
 }
+
+.messageImg {
+    display: none;
+    max-height: 20px;
+    max-width: 20px;
+    height: auto;
+    width: auto;
+    margin: 1em;
+}

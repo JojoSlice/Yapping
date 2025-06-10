@@ -23,5 +23,8 @@ namespace miniReddit.Models
         [JsonPropertyName("createdat")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        [JsonPropertyName("isread")]
+        public bool IsRead { get; set; } = false;
+
     }
 }

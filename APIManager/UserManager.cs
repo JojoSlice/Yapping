@@ -141,6 +141,21 @@ namespace miniReddit.APIManager
                 return new();
             }
         }
+
+        public async Task<List<Models.UserInfo>> GetAllUserinfo()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync(url + "AllUserinfo");
+                response.EnsureSuccessStatusCode();
+
+                var result = await response.Content.ReadAsStringAsync();
+                var userInfos = JsonSerializer.Deserialize<List<Models.UserInfo>>(result);
+                
+                return userInfos ?? throw new Exception("Deserialization failed");
+            }
+            catch (Exception ex) { Console.WriteLine("Error" + ex.Message); return new(); }
+        }
        
         public async Task<Models.User> GetLoggedInUserAsync()
         {

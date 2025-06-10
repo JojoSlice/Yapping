@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const wlcText = document.getElementById("welcomeText");
     const profileImg = document.getElementById("profileimg");
     const profileLink = document.getElementById("profileLink");
+    const messageBtn = document.getElementById("messages");
 
     fetch("/api/isauthenticated/get", {
     credentials: "include" 
@@ -18,11 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
             authButton.value = "Sign out";
             authButton.addEventListener("click", signOut);
             welcome();
+            messageBtn.style.display = "block";
+            HasUnreadMessages();
             profileLink.style.display = "block";
             profileImg.style.display = "block";
                     } else {
             authButton.value = "Sign in";
             authButton.addEventListener("click", signIn);
+            messageBtn.style.display = "none";
             profileLink.style.display = "none";
             profileImg.style.display = "none";
             wlcText.style.display = "none";
@@ -63,6 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 wlcText.style.display = "block";
                 wlcText.innerText = welcomeMessage;
                 let path = data.profileimg.replace("~", "");
+                if (path == "") {
+                    path = "~/img/stockProfileImg.png"
+                }
                 profileImg.src = path;
                 console.log(path);
             })
@@ -71,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 
+   
     function signIn() {
         signinmodal.style.display = "block";
     };
@@ -86,4 +94,32 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 });
 
+async function HasUnreadMessages() {
+    const hasUnread = Unread();
+    const messageImg = document.getElementById("messageimg");
+    if (hasUnread == true) {
+        messageImg.src = "/img/messagesAlert.svg";
+    }
+    else {
+        messageImg.src = "/img/messages.svg";
+    }
+    messageImg.style.display = "block";
+}
 
+function Unread() {
+    return fetch("api/userApi/unread", {
+        credentials: "include"
+    })
+    .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.json(); // Parse the JSON body
+    })
+    .then(data => {
+        console.log("Unread status:", data);
+        return data;
+    })
+    .catch(err => {
+        console.error("Error in Unread():", err);
+        return false;
+    });
+}

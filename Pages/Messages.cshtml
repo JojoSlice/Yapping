@@ -1,5 +1,5 @@
 ﻿@page
-@model miniReddit.Pages.MessegesModel
+@model miniReddit.Pages.MessagesModel
 @{
 }
 <head>
@@ -41,11 +41,49 @@
                             <p class="card-text">@message.Message.Text</p>
                         </div>
                         <div class="card-footer">
-                            <button onclick="reply('@message.Message.Id', this)" class="btn btn-secondary m-1">Reply</button>
+                            <button onclick="reply('@message.UserInfo.UserId', this)" class="btn btn-secondary m-1">Reply</button>
                         </div>
                     </div>
                 </div>
             }
+        </div>
     </div>
+
+    <div id="MessageModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="CreateMessage">
+                <label asp-for="SelectedUserId">Select User:</label>
+                <select asp-for="SelectedUserId" class="form-control">
+                    <option value="">-- Choose User --</option>
+                    @foreach(var user in Model.Users)
+                    {
+                        <option value="@user.UserId">@user.Username</option>
+                    }
+                </select>
+                <span asp-validation-for="SelectedUserId"></span>
+                
+                <label asp-for="MessageText"></label>
+                <textarea asp-for="MessageText"></textarea>
+                <span asp-validation-for="MessageText"></span>
+
+                <input type="submit" value="Send" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
+    <div id="replyModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="Reply">
+                    <label asp-for="MessageText"></label>
+                    <textarea asp-for="MessageText"></textarea> 
+                    <span asp-validation-for="MessageText"></span>
+                    <input id="ReplyId" type="hidden" asp-for=ReplyId value=""/>
+                <input type="submit" value="Reply" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/Messages.js"></script>
 
     </body>

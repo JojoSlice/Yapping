@@ -17,6 +17,6 @@ namespace miniReddit.Models
         [JsonPropertyName("password")]
         public string Password { get; set; } = string.Empty;
         [JsonPropertyName("profileimg")]
-        public string ProfileImg { get; set; } = string.Empty;    
+        public string ProfileImg { get; set; } = "~/img/stockProfileImg.png";    
     }
 }

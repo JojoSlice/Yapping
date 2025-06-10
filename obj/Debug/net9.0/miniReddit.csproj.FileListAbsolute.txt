@@ -231,12 +231,15 @@ C:\Users\Johan\web\Yapping\obj\Debug\net9.0\compressed\r8s8v06766-hj7vox3m8j.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\y7rbfz3grm-wuprjd7kxx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\meysnzd20e-qyusl6qksv.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\qfw8nn83dc-xg96mg2woi.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-o6hhwy7yoh.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\ybhk4astzd-3slq1dkz0w.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hrzxk4nnwo-3slq1dkz0w.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\f585o3g01c-0jfapy9hyx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-1zh758gyle.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-wiwfndscyp.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-au3vv8uv9t.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\s257ly094u-kjoe1wrepp.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\g60xr17dxq-zvb3dw0whl.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\vgpp8d2xrl-orm613160n.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-azvfdknc8z.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-v8dbyzwzze.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\79u8qvqbha-ypoiw2hyp4.gz
