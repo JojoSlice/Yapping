@@ -5,13 +5,14 @@ using System.Web.WebPages;
 
 namespace miniReddit.Pages
 {
-    public class PostModel(APIManager.LikeManager likeManager,APIManager.CategoryManager categoryManager,APIManager.UserManager userManager,APIManager.CommentManager commentManager,APIManager.PostManager postManager) : PageModel
+    public class PostModel(APIManager.LikeManager likeManager,APIManager.MessageManager messageManager ,APIManager.CategoryManager categoryManager,APIManager.UserManager userManager,APIManager.CommentManager commentManager,APIManager.PostManager postManager) : PageModel
     {
         private readonly APIManager.CommentManager _comManager = commentManager;
         private readonly APIManager.UserManager _userManager = userManager;
         private readonly APIManager.PostManager _postManager = postManager;
         private readonly APIManager.CategoryManager _categoryManager = categoryManager; 
         private readonly APIManager.LikeManager _likeManager = likeManager; 
+        private readonly APIManager.MessageManager _messManager = messageManager;
         public Models.Post? Post {  get; set; }
         [BindProperty]
         public List<Models.Comment>? Comments { get; set; }
@@ -30,6 +31,11 @@ namespace miniReddit.Pages
         [BindProperty]
         public string CommentId { get; set; } = string.Empty;
         public List<CommentViewModel> ViewComments { get; set; } = new();
+        [BindProperty]
+        public string MessageText { get; set; } = string.Empty;
+        [BindProperty]
+        public string ReplyId { get; set; } = string.Empty;
+
 
 
         public async Task OnGet(string id)
@@ -80,6 +86,21 @@ namespace miniReddit.Pages
             await _comManager.NewComment(comment);
             return RedirectToPage();
         }
+        public async Task<RedirectToPageResult> OnPostReplyAsync()
+        {
+            var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var message = new Models.Message { SendId = userid, ResiveId = ReplyId, Text = MessageText };
+            try
+            {
+                await _messManager.SendMessage(message);
+                Console.WriteLine("Message sent to " + message.ResiveId + " wrote: " + message.Text);
+                return RedirectToPage();
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); ModelState.AddModelError("", "Failed to send message"); }
+            return RedirectToPage();
+
+        }
+
         public async Task<List<CommentViewModel>> GetCommentViewModelList(List<Models.Comment> comments)
         {
             var ViewCommentsModel = new List<CommentViewModel>();

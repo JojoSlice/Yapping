@@ -12,7 +12,7 @@
                         <img class="img-thumbnail m-1" src="@Model.PostUser.ProfileImg" />
                         <h6 class="card-title m-1">@Model.PostUser.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
-                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                        <button onclick="reply('@Model.PostUser.UserId', this)" class="btn btn-secondary m-1">Message</button>
                     </div>
 
                     <div class="col-9 m-1 card">
@@ -25,6 +25,7 @@
                         <div class="card-footer">
                             <button id="commentBtn" class="btn btn-primary">Comment</button>
                             <button onclick="likePost('@Model.Post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@Model.Likes.Count()</span></button>
+                            <button onclick="report('@Model.Post.Id', this)" class="btn btn-danger m-1">Report</button>
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@
                         <img class="img-thumbnail m-1" src="@comment.UserInfo.ProfileImg" />
                         <h6 class="card-title m-1">@comment.UserInfo.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
-                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                        <button onclick="reply('@comment.UserInfo.UserId', this)" class="btn btn-secondary m-1">Message</button>
                     </div>
 
                     <div class="col-9 m-1 card">
@@ -51,7 +52,7 @@
                         </div>
                         <div class="card-footer">
                             <button onclick="commentPost('@comment.Comment.Id', this)" class="btn btn-secondary m-1">Comment <span class="badge">@comment.Replies.Count()</span></button>
-                            <button onclick="likePost('@comment.Comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@comment.Likes.Count()</span></button>
+                            <button onclick="reportComment('@comment.Comment.Id', this)" class="btn btn-danger m-1">Report</button>
                         </div>
                     </div>
         </div>
@@ -66,7 +67,7 @@
                         <img class="img-thumbnail m-1" src="@reply.UserInfo.ProfileImg" />
                         <h6 class="card-title m-1">@reply.UserInfo.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
-                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                        <button onclick="reply('@reply.UserInfo.UserId', this)" class="btn btn-secondary m-1">Message</button>
                     </div>
 
                     <div class="col-8 m-1 card">
@@ -74,7 +75,7 @@
                             <p class="card-text">@reply.Comment.Text</p>
                         </div>
                         <div class="card-footer">
-                            <button onclick="likePost('@reply.Comment.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@reply.Likes.Count()</span></button>
+                            <button onclick="reportComment('@reply.Comment.Id', this)" class="btn btn-danger m-1">Report</button>
                         </div>
                     </div>
 
@@ -106,6 +107,18 @@
                     <span asp-validation-for="CommentText"></span>
                     <input id="commentid" type="hidden" name="CommentId" value="" />
                 <input type="submit" value="Comment" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
+<div id="replyModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="Reply">
+                    <label asp-for="MessageText"></label>
+                    <textarea asp-for="MessageText"></textarea> 
+                    <span asp-validation-for="MessageText"></span>
+                    <input id="ReplyId" type="hidden" asp-for=ReplyId value=""/>
+                <input type="submit" value="Reply" class="btn btn-primary"/>
             </form>
         </div>
     </div>

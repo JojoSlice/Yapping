@@ -30,6 +30,11 @@ namespace miniReddit.Pages
             }
 
             var realativePath = await _upload.Upload(NewImg, AktiveUser.Username);
+            if(string.IsNullOrEmpty(realativePath))
+            {
+                ModelState.AddModelError("Error", "Image could not be uploaded");
+                Redirect();
+            }
 
             try
             {

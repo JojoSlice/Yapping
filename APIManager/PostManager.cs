@@ -7,7 +7,7 @@ namespace miniReddit.APIManager
     public class PostManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://localhost:7188/api/posts/";
+        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/posts/";
 
         public PostManager(HttpClient httpClient)
         {

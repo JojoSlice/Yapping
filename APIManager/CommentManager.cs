@@ -6,11 +6,31 @@ namespace miniReddit.APIManager
     public class CommentManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://localhost:7188/api/comments/";
+        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/comments/";
 
         public CommentManager(HttpClient httpClient)
         {
             _httpClient = httpClient;
+        }
+
+        public async Task<Models.Comment> GetComment(string id)
+        {
+            Console.WriteLine("getComment");
+            var response = await _httpClient.GetAsync(url + "comment?id=" + id);
+            response.EnsureSuccessStatusCode();
+
+            try
+            {
+                var result = await response.Content.ReadAsStringAsync();
+                if(result != null)
+                {
+                    var comment = JsonSerializer.Deserialize<Models.Comment>(result);
+                    return comment ?? new();
+                }
+                throw new Exception("Json problems");
+            }
+            catch(Exception ex) { Console.WriteLine(ex.Message); }
+            return new();
         }
         
         public async Task<List<Models.Comment>> GetPostComments(string postid)

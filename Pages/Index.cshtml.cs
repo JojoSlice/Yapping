@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace miniReddit.Pages
 {
-    public class IndexModel (Services.ImgUpload upload,APIManager.LikeManager likeManager, APIManager.CommentManager commentManager,APIManager.PostManager postManager, APIManager.CategoryManager categoryManager, APIManager.UserManager userManager): PageModel
+    public class IndexModel (Services.ImgUpload upload,APIManager.LikeManager likeManager,APIManager.MessageManager messageManager, APIManager.CommentManager commentManager,APIManager.PostManager postManager, APIManager.CategoryManager categoryManager, APIManager.UserManager userManager): PageModel
     {
         private readonly APIManager.CommentManager _comManager = commentManager;
         private readonly APIManager.UserManager _userManager = userManager;
@@ -15,6 +15,7 @@ namespace miniReddit.Pages
         private readonly APIManager.LikeManager _likeManager = likeManager;
         private readonly APIManager.CategoryManager _categoryManager = categoryManager;
         private readonly Services.ImgUpload _upload = upload;
+        private readonly APIManager.MessageManager _messManager = messageManager;
         public List<Models.Post> Posts { get; private set; } = new();
         public List<PostViewModel> PostViewModels { get; private set; } = new();
 
@@ -32,6 +33,11 @@ namespace miniReddit.Pages
 
         [BindProperty(SupportsGet = true)]
         public string? SelectedCategoryId { get; set; }
+        [BindProperty]
+        public string MessageText { get; set; } = string.Empty;
+        [BindProperty]
+        public string ReplyId { get; set; } = string.Empty;
+
 
 
         public async Task OnGet()
@@ -145,6 +151,21 @@ namespace miniReddit.Pages
                 return new JsonResult(new { success = false, message = ex.Message });
             }
         }
+        public async Task<RedirectToPageResult> OnPostReplyAsync()
+        {
+            var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var message = new Models.Message { SendId = userid, ResiveId = ReplyId, Text = MessageText };
+            try
+            {
+                await _messManager.SendMessage(message);
+                Console.WriteLine("Message sent to " + message.ResiveId + " wrote: " + message.Text);
+                return RedirectToPage();
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); ModelState.AddModelError("", "Failed to send message"); }
+            return RedirectToPage();
+
+        }
+
         public async Task<List<Models.Post>> GetPostsAsync()
         {
             Console.WriteLine("Get posts körs");

@@ -36,7 +36,7 @@
                         <img class="img-thumbnail m-1" src="@post.UserInfo.ProfileImg" />
                         <h6 class="card-title m-1">@post.UserInfo.Username</h6>
                         <button class="btn btn-secondary m-1 p-1 text-wrap">View user/Ej funktionel</button>
-                        <button class="btn btn-secondary m-1 p-1 text-break">Send message/Ej funktionel</button>
+                        <button onclick="reply('@post.UserInfo.UserId', this)" class="btn btn-secondary m-1">Message</button>
                     </div>
 
                     <div class="col-9 m-1 card">
@@ -49,6 +49,7 @@
                         <div class="card-footer">
                             <a asp-page="/Post" asp-route-id="@post.Post.Id" class="btn btn-secondary m-1">Comment <span class="badge">@post.Comments.Count()</span></a>
                             <button onclick="likePost('@post.Post.Id', this)" class="btn btn-secondary m-1">Like <span class="badge">@post.Likes.Count()</span></button>
+                            <button onclick="report('@post.Post.Id', this)" class="btn btn-danger m-1">Report</button>
                         </div>
                     </div>
                 </div>
@@ -85,6 +86,18 @@
         </div>
     </div>
        
+    <div id="replyModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="Reply">
+                    <label asp-for="MessageText"></label>
+                    <textarea asp-for="MessageText"></textarea> 
+                    <span asp-validation-for="MessageText"></span>
+                    <input id="ReplyId" type="hidden" asp-for=ReplyId value=""/>
+                <input type="submit" value="Reply" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
     <script src="/js/IndexTest.js"></script>
 
 </body>

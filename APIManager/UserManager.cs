@@ -7,7 +7,7 @@ namespace miniReddit.APIManager
     {
         private readonly HttpClient _httpClient;
         private readonly Services.AuthenticationService _authentication;
-        private readonly string url ="https://localhost:7188/api/user/";
+        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/user/";
         public UserManager(HttpClient httpClient, Services.AuthenticationService authentication)
         {
             _httpClient = httpClient;

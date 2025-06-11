@@ -18,5 +18,7 @@ namespace miniReddit.Models
         public string Password { get; set; } = string.Empty;
         [JsonPropertyName("profileimg")]
         public string ProfileImg { get; set; } = "~/img/stockProfileImg.png";    
+        [JsonPropertyName("admin")]
+        public bool Admin { get; set; } = false;
     }
 }
