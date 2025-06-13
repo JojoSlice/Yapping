@@ -1,0 +1,144 @@
+﻿@page
+@model miniReddit.Pages.ChatModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="row">
+        
+        <div class="col-2 card">
+            <div class="dropdown m-1">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Chats
+                </a>
+                <ul class="dropdown-menu">
+                    @foreach(var chat in Model.GroupChats)
+                    {
+                        <li>
+                            <a class="dropdown-item" asp-page="/Chat" asp-route-chatId="@chat.Id">@chat.Name</a>
+                            </li>
+                    }
+                </ul>
+            </div>
+            <div class="m-1">
+                <button id="newChat" class="btn btn-primary m-1">New Chat</button>
+            </div>
+
+        </div>
+
+        <div class="col-10 card" id="chatWindow"> 
+            @if(Model.SelectedChat != null)
+            {
+                <div class="card-header row">
+                    @if(Model.SelectedChat.Chat.CreatedById == Model.UserInfo.UserId)
+                    {
+                        <button id="addUser" class="btn btn-primary m-1 col-auto">Add User</button>
+                        <button id="removeUser" class="btn btn-primary m-1 col-auto">Remove User</button>
+                    }
+                    <div class="col-auto">
+                        <h4 class="m-1">Users:</h4>
+                    </div>
+                    @foreach(var user in Model.SelectedChat.Users)
+                    {
+                        <div class="col-auto">
+                            <img src="@user.ProfileImg" class="img-thumbnail" />
+                        </div>
+                        <div class="col-auto">
+                            <h4 class="m-1">@user.Username</h4>
+                        </div>
+                    }
+                </div>
+                <div class="card-body row">
+                    @foreach(var mess in Model.SelectedChat.ChatMessages)
+                    {
+                        if(mess.User.UserId != Model.UserInfo.UserId)
+                        {
+                            <div class="col-4"></div>
+                        }
+                        <div class="card col-7 m-1">
+                            <div class="card-header">
+                                <label>@mess.User.Username :</label>
+                            </div>
+                            <div class="card-body">
+                                <label>@mess.ChatMessage.Text</label>
+                            </div>
+                        </div>
+                        if(mess.User.UserId == Model.UserInfo.UserId)
+                        {
+                            <div class="col-4"></div>
+                        }
+                    }
+                </div>
+            } 
+            <div class="card-footer">
+                <form method="post" enctype="multipart/form-data" asp-page-handler="NewChatMessage">
+                <input type="hidden" name="chatId" value="@Model.SelectedChat?.Chat?.Id" />
+                    <textarea asp-for="NewChatMessage" class="form-control rounded-3 shadow-sm" rows="2" placeholder="Write something..."></textarea>
+                    <span asp-validation-for="NewChatMessage"></span>
+                <input type="submit" value="Send" class="btn btn-primary"/>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+<div id="chatModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="NewChat">
+                    <label asp-for="ChatName">Name your chat</label>
+                    <textarea asp-for="ChatName"></textarea> 
+                    <span asp-validation-for="ChatName"></span>
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
+<div id="addModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="AddUser">
+                <input type="hidden" name="chatId" value="@Model.SelectedChat?.Chat?.Id" />
+
+                  <label asp-for="AddUserId">Select User:</label>
+                <select asp-for="AddUserId" class="form-control">
+                    <option value="">Choose User</option>
+                    @foreach(var user in Model.AllUsers)
+                    {
+                        <option value="@user.UserId">@user.Username</option>
+                    }
+                </select>
+                <span asp-validation-for="AddUserId"></span>
+
+                <input type="submit" value="Add" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
+
+<div id="removeModal" class="newPost">
+        <div id="commentContainer" class="newPostContainer">
+            <form method="post" enctype="multipart/form-data" asp-page-handler="RemoveUser">
+                <input type="hidden" name="chatId" value="@Model.SelectedChat?.Chat?.Id" />
+
+                  <label asp-for="RemoveUserId">Select User:</label>
+                <select asp-for="RemoveUserId" class="form-control">
+                    <option value="">Choose User</option>
+                    @if(Model.SelectedChat != null)
+                    {
+                        @foreach(var user in Model.SelectedChat.ChatMessages)
+                        {
+                            <option value="@user.User.UserId">@user.User.Username</option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="RemoveUserId"></span>
+
+                <input type="submit" value="Remove" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/Chat.js"></script>
+ 
+</body>

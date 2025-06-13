@@ -1,41 +1,49 @@
-﻿namespace miniReddit.Services
+﻿using Microsoft.AspNetCore.Hosting;
+
+namespace miniReddit.Services
 {
-    public class ImgUpload(IWebHostEnvironment env)
+    public class ImgUpload(IWebHostEnvironment webHostEnviroment)
     {
-        private readonly string _webRoot = env.WebRootPath;
-
-        public async Task<string> Upload(IFormFile img, string username)
+        private readonly IWebHostEnvironment _webEnv = webHostEnviroment;
+        public async Task<string> Upload(IFormFile imageFile, string username)
         {
-            if (img == null ||
-                (img.ContentType != "image/png" && img.ContentType != "image/jpeg"))
+            // Validation (same as before)
+            if (imageFile == null || imageFile.Length == 0)
+                throw new ArgumentException("No image file provided");
+
+            if (string.IsNullOrWhiteSpace(username))
+                throw new ArgumentException("Username is required");
+
+            // Additional security: sanitize username
+            var cleanUsername = Path.GetInvalidFileNameChars()
+                .Aggregate(username, (current, c) => current.Replace(c.ToString(), "_"));
+
+            // Azure-compatible path construction
+            string uploadsFolder = Path.Combine(_webEnv.WebRootPath, "uploads", cleanUsername);
+
+            // Create directory if needed
+            if (!Directory.Exists(uploadsFolder))
             {
-                return string.Empty;
+                Directory.CreateDirectory(uploadsFolder);
             }
 
-            var fileExt = Path.GetExtension(img.FileName);
-            var fileName = Guid.NewGuid() + fileExt;
+            // Generate unique filename with original extension
+            string safeFileName = Path.GetFileNameWithoutExtension(imageFile.FileName)
+                .Replace(" ", "_");
+            safeFileName = Path.GetInvalidFileNameChars()
+                .Aggregate(safeFileName, (current, c) => current.Replace(c.ToString(), "_"));
 
-            var userDir = username.Replace(" ", "").Replace("/", "").Replace("\\", "").ToLowerInvariant();
-            var folderPath = Path.Combine(_webRoot, "uploads", userDir);
+            string uniqueFileName = $"{Guid.NewGuid()}_{safeFileName}{Path.GetExtension(imageFile.FileName)}";
+            string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-            try
+            // Save the file
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
-                Directory.CreateDirectory(folderPath);
-
-                var filePath = Path.Combine(folderPath, fileName);
-
-                using var stream = new FileStream(filePath, FileMode.Create);
-                await img.CopyToAsync(stream);
-
-                var relativePath = $"/uploads/{userDir}/{fileName}";
-                return relativePath;
+                await imageFile.CopyToAsync(fileStream);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Image upload failed: {ex.Message}");
-                return string.Empty;
-            }
+
+            // Return web-accessible path
+            return $"/uploads/{cleanUsername}/{uniqueFileName}";
         }
     }
- 
 }

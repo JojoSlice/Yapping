@@ -17,12 +17,13 @@
                     @foreach(var sender in Model.Senders)
                     {
                         <li>
-                            <a class="dropdown-item" asp-page="/Index" asp-route-SelectedCategoryId="@sender.UserId">@sender.Username</a>
+                            <a class="dropdown-item" asp-page="/Messages" asp-route-userid="@sender.UserId">@sender.Username</a>
                             </li>
                     }
                 </ul>
             </div>
             <button id="newMessage" class="btn btn-primary m-1">New Message</button>
+            <a asp-page="/Chat" class="btn btn-primary m-1">Group chat</a>
         </div>
         <div class="container" id="postContainer">
 

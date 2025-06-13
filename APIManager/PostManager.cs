@@ -7,7 +7,8 @@ namespace miniReddit.APIManager
     public class PostManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/posts/";
+        private readonly string url ="https://localhost:7188/api/posts/";
+        //private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/message/";
 
         public PostManager(HttpClient httpClient)
         {
@@ -17,7 +18,8 @@ namespace miniReddit.APIManager
         public async Task<List<Models.Post>> GetLatestPosts(DateTime lastPost)
         {
             var response = await _httpClient.GetAsync(url + "latest?lastCreatedAt=" + Uri.EscapeDataString(lastPost.ToString("o")));
-            response.EnsureSuccessStatusCode();
+            if (!response.IsSuccessStatusCode)
+                return new();
 
             var result = await response.Content.ReadAsStringAsync();
 
@@ -43,7 +45,8 @@ namespace miniReddit.APIManager
         public async Task<List<Models.Post>> GetPosts()
         {
             var response = await _httpClient.GetAsync(url + "getposts");
-            response.EnsureSuccessStatusCode();
+            if (!response.IsSuccessStatusCode)
+                return new();
 
             var result = await response.Content.ReadAsStringAsync();
 

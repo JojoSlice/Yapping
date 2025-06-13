@@ -24,6 +24,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="row border-1">
+                <div class="col-6">
+                    <label>@report.Report.Id</label>
+                </div>            
+                <div class="col-3">
+                    <button onclick="deletePostReport('@report.Report.Id','@report.Post.Id', this)" class="btn btn-danger m-1">Delete</button>
+                </div>
+                @if(!report.Report.IsRead)
+                {
+                    <div class="col-3">
+                        <button onclick="markReport('@report.Report.Id', this)" class="btn btn-primary m-1">Mark as handled</button>
+                    </div>
+                }
+            </div>
+
             }
             else if(report.Comment != null)
             {
@@ -40,13 +55,12 @@
                     </div>
                 </div>
 
-            }
             <div class="row border-1">
                 <div class="col-6">
                     <label>@report.Report.Id</label>
                 </div>            
                 <div class="col-3">
-                    <button onclick="deleteReport('@report.Report.Id', this)" class="btn btn-danger m-1">Delete</button>
+                    <button onclick="deleteCommentReport('@report.Report.Id', '@report.Comment.Id', this)" class="btn btn-danger m-1">Delete</button>
                 </div>
                 @if(!report.Report.IsRead)
                 {
@@ -55,6 +69,7 @@
                     </div>
                 }
             </div>
+            }
         }
     </div>
 

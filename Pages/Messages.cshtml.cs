@@ -19,13 +19,13 @@ namespace miniReddit.Pages
         public string MessageText { get; set; } = string.Empty;
         [BindProperty]
         public string ReplyId { get; set; } = string.Empty;
-        public async Task OnGet()
+        public async Task OnGet(string? userid)
         {
             Console.WriteLine("Messeges körs");
             await MarkAsRead();
             Messages = await GetRecivedMessages();
             Senders = await GetSenders(Messages);
-            MessageModels = await CreateModels(Messages);
+            MessageModels = await CreateModels(Messages, userid);
             Users = await GetUsers();
             Console.WriteLine("Users: " + Users.Count);
             foreach(var user in Users)
@@ -107,8 +107,14 @@ namespace miniReddit.Pages
             var messages = await _messManager.GetMessages(userid);
             return messages;
         }
-        public async Task<List<MessageModel>> CreateModels(List<Models.Message> messages)
+        public async Task<List<MessageModel>> CreateModels(List<Models.Message> Allmessages, string? userid)
         {
+            var messages = Allmessages.ToList();
+            if (userid != null)
+            {
+                messages = Allmessages.Where(m => m.SendId == userid).ToList();
+            }
+
             var messModels = new List<MessageModel>();
             foreach (var message in messages)
             {

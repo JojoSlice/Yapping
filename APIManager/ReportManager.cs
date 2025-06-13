@@ -6,7 +6,8 @@ namespace miniReddit.APIManager
     public class ReportManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/report/";
+        private readonly string url ="https://localhost:7188/api/report/";
+        //private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/report/";
         public ReportManager(HttpClient httpClient)
         {
             _httpClient = httpClient;
@@ -26,34 +27,6 @@ namespace miniReddit.APIManager
             {
                 Console.WriteLine(ex.Message);
             }
-        }
-        public async Task DeleteComment(string id)
-        {
-            try
-            {
-                var response = await _httpClient.DeleteAsync(url + "comment?id=" + id);
-                response.EnsureSuccessStatusCode();
-            }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
-        }
-        public async Task DeletePost(string id)
-        {
-            try
-            {
-                var response = await _httpClient.DeleteAsync(url + "post?id=" + id);
-                response.EnsureSuccessStatusCode();
-            }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
-        }
-
-        public async Task MarkReportAsHandled(string id)
-        {
-            try
-            {
-                var response = await _httpClient.PutAsync(url + "?id=" + id, null);
-                response.EnsureSuccessStatusCode();
-            }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public async Task<List<Models.Report>> GetUnReadReports()
         {

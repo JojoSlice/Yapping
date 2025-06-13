@@ -15,6 +15,10 @@ namespace miniReddit
             builder.Services.AddHttpClient<APIManager.PostManager>();
             builder.Services.AddHttpClient<APIManager.CommentManager>();
             builder.Services.AddHttpClient<APIManager.CategoryManager>();
+            builder.Services.AddHttpClient<APIManager.LikeManager>();
+            builder.Services.AddHttpClient<APIManager.MessageManager>();
+            builder.Services.AddHttpClient<APIManager.ReportManager>();
+            builder.Services.AddHttpClient<APIManager.ChatManager>();
             builder.Services.AddScoped<APIManager.UserManager>();
             builder.Services.AddScoped<APIManager.PostManager>();
             builder.Services.AddScoped<APIManager.CommentManager>();
@@ -22,6 +26,7 @@ namespace miniReddit
             builder.Services.AddScoped<APIManager.LikeManager>();
             builder.Services.AddScoped<APIManager.MessageManager>();
             builder.Services.AddScoped<APIManager.ReportManager>();
+            builder.Services.AddScoped<APIManager.ChatManager>();
             builder.Services.AddScoped<Services.ImgUpload>();
             builder.Services.AddScoped<Services.AuthenticationService>();
 
@@ -55,6 +60,8 @@ namespace miniReddit
             }
 
             app.UseHttpsRedirection();
+
+            //app.UseStaticFiles();
 
             app.UseRouting();
 

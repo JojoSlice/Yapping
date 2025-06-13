@@ -63,33 +63,6 @@ namespace miniReddit.Pages
             }
         }
 
-        public async Task<IActionResult> OnPostMarkAsHandled(string Id)
-        {
-            try
-            {
-                await _reportManager.MarkReportAsHandled(Id);
-            }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
-            
-            return RedirectToPage();
-        }
-        public async Task<IActionResult> OnPostDelete(string Id)
-        {
-            var report = Reports.Where(R => R.Id == Id).FirstOrDefault();
-            try
-            {
-                if (string.IsNullOrWhiteSpace(report.PostId))
-                    await _reportManager.DeleteComment(report.CommentId);
-                else
-                    await _reportManager.DeletePost(report.PostId);
-            }
-            catch (Exception ex) 
-            {
-                Console.WriteLine(ex.Message);
-            }
-
-            return RedirectToPage();
-        }
         public async Task<Models.User> GetUser()
         {
             var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;

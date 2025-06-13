@@ -236,10 +236,12 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\hr
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\f585o3g01c-0jfapy9hyx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\fu5sseb7ea-1zh758gyle.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\staticwebassets.build.json.cache
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-wiwfndscyp.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\s257ly094u-kjoe1wrepp.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\g60xr17dxq-zvb3dw0whl.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\vgpp8d2xrl-orm613160n.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-azvfdknc8z.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-v8dbyzwzze.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\79u8qvqbha-ypoiw2hyp4.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\a7vayfnil9-mj5lmxyhb0.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\xvpkdds7p6-4qmibx7ahp.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\98z8p952hi-r9nbmhumw0.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\79u8qvqbha-z28h8pl2lm.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\s257ly094u-mg4r0ywv8t.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\pcbbrc04y5-nvvjy1jkd4.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Debug\net9.0\compressed\whc2imoiyu-tn9emsciel.gz

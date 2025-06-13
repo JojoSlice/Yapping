@@ -20,6 +20,10 @@
                             <label class="card-title">@Model.Category.Name / @Model.Post.Title . Date: @Model.Post.CreatedAt</label>
                         </div>
                         <div class="card-body">
+                            @if(Model.Post.ImgPath != null)
+                            {
+                                <img src="@Model.Post.ImgPath" class="card-img" />
+                            }
                             <p class="card-text">@Model.Post.Text</p>
                         </div>
                         <div class="card-footer">

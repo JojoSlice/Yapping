@@ -118,7 +118,8 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\miniReddit.
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\miniReddit.genruntimeconfig.cache
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\ref\miniReddit.dll
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\a7vayfnil9-mj5lmxyhb0.gz
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\whc2imoiyu-hrh3ypdcci.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\98z8p952hi-r9nbmhumw0.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\pcbbrc04y5-nvvjy1jkd4.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\s257ly094u-mg4r0ywv8t.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\xvpkdds7p6-4qmibx7ahp.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\whc2imoiyu-tn9emsciel.gz

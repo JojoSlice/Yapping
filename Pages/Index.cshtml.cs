@@ -20,7 +20,6 @@ namespace miniReddit.Pages
         public List<PostViewModel> PostViewModels { get; private set; } = new();
 
         public List<Models.Category> Categories { get; private set; } = new();
-        public Models.User? ActiveUser { get; private set; }
 
         [BindProperty]
         public string Title { get; set; } = string.Empty;
@@ -38,6 +37,7 @@ namespace miniReddit.Pages
         [BindProperty]
         public string ReplyId { get; set; } = string.Empty;
 
+        public string? userid { get; set; }
 
 
         public async Task OnGet()
@@ -55,6 +55,8 @@ namespace miniReddit.Pages
                 var postModel = await CreatePostViewModel(post);
                 PostViewModels.Add(postModel);
             }
+
+            userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         }
 
         public async Task<List<Models.Category>> GetCategoriesAsync()
