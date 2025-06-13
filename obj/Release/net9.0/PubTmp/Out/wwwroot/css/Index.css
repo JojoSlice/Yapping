@@ -16,3 +16,11 @@
     width: 300px;
     text-align: center;
 }
+
+.chatimg {
+    max-height: 80px;
+    max-width: 80px;
+    height: auto;
+    width: auto;
+    border: solid;
+}

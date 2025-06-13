@@ -5,8 +5,8 @@ namespace miniReddit.APIManager
     public class LikeManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://localhost:7188/api/likes/";
-        //private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/likes/";
+        //private readonly string url ="https://localhost:7188/api/likes/";
+        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/likes/";
 
         public LikeManager(HttpClient httpClient)
         {

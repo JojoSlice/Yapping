@@ -34,7 +34,6 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\miniReddit.
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\scopedcss\bundle\miniReddit.styles.css
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\scopedcss\projectbundle\miniReddit.bundle.scp.css
-C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\f585o3g01c-0jfapy9hyx.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\qfw8nn83dc-xg96mg2woi.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\vk96w4ntts-61n19gt1b8.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\hhuzefj9jq-v4mcbjx279.gz
@@ -122,4 +121,9 @@ C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\pcbbrc04y5-nvvjy1jkd4.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\s257ly094u-mg4r0ywv8t.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\xvpkdds7p6-4qmibx7ahp.gz
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\rpswa.dswa.cache.json
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\rjimswa.dswa.cache.json
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\f585o3g01c-l6d562gpgu.gz
 C:\Users\Johan\source\repos\miniReddit\miniReddit\obj\Release\net9.0\compressed\whc2imoiyu-tn9emsciel.gz

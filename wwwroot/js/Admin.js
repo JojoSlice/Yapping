@@ -1,6 +1,5 @@
 ﻿
-/*const url = "https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/categories/"*/
-const url = "https://localhost:7188/"
+const url = "https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/categories/"
 
 function markReport(reportId, btn) {
         fetch(`${url}api/report`, {

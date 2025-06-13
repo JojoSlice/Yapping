@@ -3,8 +3,8 @@
     public class ChatManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://localhost:7188/api/chat/";
-        //private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/chat/";
+        //private readonly string url ="https://localhost:7188/api/chat/";
+        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/chat/";
 
         public ChatManager(HttpClient httpClient)
         {

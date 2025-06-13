@@ -7,8 +7,8 @@ namespace miniReddit.APIManager
     public class MessageManager
     {
         private readonly HttpClient _httpClient;
-        private readonly string url ="https://localhost:7188/api/message/";
-        //private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/message/";
+        //private readonly string url ="https://localhost:7188/api/message/";
+        private readonly string url ="https://yappingapi-c6fkeubydcaycdgn.northeurope-01.azurewebsites.net/api/message/";
 
         public MessageManager(HttpClient httpClient)
         {

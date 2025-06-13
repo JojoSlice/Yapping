@@ -125,11 +125,14 @@ namespace miniReddit.Pages
             var likes = await _likeManager.GetLikes(objid);
             return likes.ToList();
         }
-        public async Task<JsonResult> OnPostAsync()
+        public async Task<RedirectToPageResult> OnPostAsync()
         {
             var userid = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userid == null)
-                return new JsonResult(new { success = false, message = "User not authenticated" });
+            {
+                ModelState.AddModelError("Error", "User not logged in!");
+                return RedirectToPage();
+            }
 
             var user = await _userManager.GetUserById(userid);
 
@@ -145,12 +148,13 @@ namespace miniReddit.Pages
             try
             {
                 await _postManager.CreatePost(post);
-                return new JsonResult(new { success = true, post });
+                return RedirectToPage();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return new JsonResult(new { success = false, message = ex.Message });
+                ModelState.AddModelError("Error", ex.Message);
+                return RedirectToPage();
             }
         }
         public async Task<RedirectToPageResult> OnPostReplyAsync()
